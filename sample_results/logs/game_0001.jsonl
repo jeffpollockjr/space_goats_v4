@@ -1,0 +1,407 @@
+{"event_number": 1, "event": "game_start", "phase": "setup", "player": 1, "player_turn": 0, "deck_remaining": 104, "seed": 208726928071377, "players": 4}
+{"event_number": 2, "event": "draw", "phase": "setup", "player": 1, "player_turn": 0, "deck_remaining": 103, "card": "Tin-Foil Space Helmet", "card_id": 86, "source": "deal"}
+{"event_number": 3, "event": "draw", "phase": "setup", "player": 2, "player_turn": 0, "deck_remaining": 102, "card": "The G.O.A.T.", "card_id": 30, "source": "deal"}
+{"event_number": 4, "event": "draw", "phase": "setup", "player": 3, "player_turn": 0, "deck_remaining": 101, "card": "Quarantine Zone", "card_id": 100, "source": "deal"}
+{"event_number": 5, "event": "draw", "phase": "setup", "player": 4, "player_turn": 0, "deck_remaining": 100, "card": "Laser Blast", "card_id": 50, "source": "deal"}
+{"event_number": 6, "event": "draw", "phase": "setup", "player": 1, "player_turn": 0, "deck_remaining": 99, "card": "The G.O.A.T.", "card_id": 29, "source": "deal"}
+{"event_number": 7, "event": "draw", "phase": "setup", "player": 2, "player_turn": 0, "deck_remaining": 98, "card": "Cardboard Forcefield", "card_id": 77, "source": "deal"}
+{"event_number": 8, "event": "draw", "phase": "setup", "player": 3, "player_turn": 0, "deck_remaining": 97, "card": "Goat-Yoga Focus", "card_id": 73, "source": "deal"}
+{"event_number": 9, "event": "draw", "phase": "setup", "player": 4, "player_turn": 0, "deck_remaining": 96, "card": "Orbital Vacuum", "card_id": 64, "source": "deal"}
+{"event_number": 10, "event": "draw", "phase": "setup", "player": 1, "player_turn": 0, "deck_remaining": 95, "card": "Tractor Beam", "card_id": 61, "source": "deal"}
+{"event_number": 11, "event": "draw", "phase": "setup", "player": 2, "player_turn": 0, "deck_remaining": 94, "card": "The G.O.A.T.", "card_id": 31, "source": "deal"}
+{"event_number": 12, "event": "draw", "phase": "setup", "player": 3, "player_turn": 0, "deck_remaining": 93, "card": "Astro-Billy", "card_id": 1, "source": "deal"}
+{"event_number": 13, "event": "draw", "phase": "setup", "player": 4, "player_turn": 0, "deck_remaining": 92, "card": "Chewed Wiring", "card_id": 95, "source": "deal"}
+{"event_number": 14, "event": "draw", "phase": "setup", "player": 1, "player_turn": 0, "deck_remaining": 91, "card": "Laser Blast", "card_id": 49, "source": "deal"}
+{"event_number": 15, "event": "draw", "phase": "setup", "player": 2, "player_turn": 0, "deck_remaining": 90, "card": "Space Wrench", "card_id": 69, "source": "deal"}
+{"event_number": 16, "event": "draw", "phase": "setup", "player": 3, "player_turn": 0, "deck_remaining": 89, "card": "Astro-Billy", "card_id": 14, "source": "deal"}
+{"event_number": 17, "event": "draw", "phase": "setup", "player": 4, "player_turn": 0, "deck_remaining": 88, "card": "Hydroponic Alfalfa", "card_id": 90, "source": "deal"}
+{"event_number": 18, "event": "draw", "phase": "setup", "player": 1, "player_turn": 0, "deck_remaining": 87, "card": "Tractor Beam", "card_id": 60, "source": "deal"}
+{"event_number": 19, "event": "draw", "phase": "setup", "player": 2, "player_turn": 0, "deck_remaining": 86, "card": "Astro-Billy", "card_id": 8, "source": "deal"}
+{"event_number": 20, "event": "draw", "phase": "setup", "player": 3, "player_turn": 0, "deck_remaining": 85, "card": "Hyper-Jumping Nanny", "card_id": 35, "source": "deal"}
+{"event_number": 21, "event": "auto_play", "phase": "setup", "player": 3, "player_turn": 0, "deck_remaining": 85, "card": "Hyper-Jumping Nanny", "card_id": 35}
+{"event_number": 22, "event": "draw", "phase": "setup", "player": 3, "player_turn": 0, "deck_remaining": 84, "card": "Hyper-Jumping Nanny", "card_id": 39, "source": "nanny_bonus"}
+{"event_number": 23, "event": "auto_play", "phase": "setup", "player": 3, "player_turn": 0, "deck_remaining": 84, "card": "Hyper-Jumping Nanny", "card_id": 39}
+{"event_number": 24, "event": "draw", "phase": "setup", "player": 3, "player_turn": 0, "deck_remaining": 83, "card": "Hydroponic Alfalfa", "card_id": 91, "source": "nanny_bonus"}
+{"event_number": 25, "event": "draw", "phase": "setup", "player": 4, "player_turn": 0, "deck_remaining": 82, "card": "Astro-Billy", "card_id": 7, "source": "deal"}
+{"event_number": 26, "event": "turn_start", "phase": "normal", "player": 1, "player_turn": 1, "deck_remaining": 82}
+{"event_number": 27, "event": "draw", "phase": "normal", "player": 1, "player_turn": 1, "deck_remaining": 81, "card": "Twin Kids", "card_id": 21, "source": "normal_draw"}
+{"event_number": 28, "event": "play", "phase": "normal", "player": 1, "player_turn": 1, "deck_remaining": 81, "card": "The G.O.A.T.", "card_id": 29, "waited_own_turns": 1}
+{"event_number": 29, "event": "goat_added", "phase": "normal", "player": 1, "player_turn": 1, "deck_remaining": 81, "card": "The G.O.A.T.", "card_id": 29, "goats": 3}
+{"event_number": 30, "event": "turn_end", "phase": "normal", "player": 1, "player_turn": 1, "deck_remaining": 81, "goats": 3, "hand_cards": 5}
+{"event_number": 31, "event": "turn_start", "phase": "normal", "player": 2, "player_turn": 1, "deck_remaining": 81}
+{"event_number": 32, "event": "draw", "phase": "normal", "player": 2, "player_turn": 1, "deck_remaining": 80, "card": "Twin Kids", "card_id": 16, "source": "normal_draw"}
+{"event_number": 33, "event": "play", "phase": "normal", "player": 2, "player_turn": 1, "deck_remaining": 80, "card": "The G.O.A.T.", "card_id": 31, "waited_own_turns": 1}
+{"event_number": 34, "event": "goat_added", "phase": "normal", "player": 2, "player_turn": 1, "deck_remaining": 80, "card": "The G.O.A.T.", "card_id": 31, "goats": 3}
+{"event_number": 35, "event": "turn_end", "phase": "normal", "player": 2, "player_turn": 1, "deck_remaining": 80, "goats": 3, "hand_cards": 5}
+{"event_number": 36, "event": "turn_start", "phase": "normal", "player": 3, "player_turn": 1, "deck_remaining": 80}
+{"event_number": 37, "event": "draw", "phase": "normal", "player": 3, "player_turn": 1, "deck_remaining": 79, "card": "Astro-Billy", "card_id": 10, "source": "normal_draw"}
+{"event_number": 38, "event": "play", "phase": "normal", "player": 3, "player_turn": 1, "deck_remaining": 79, "card": "Hydroponic Alfalfa", "card_id": 91, "waited_own_turns": 1}
+{"event_number": 39, "event": "special_attached", "phase": "normal", "player": 3, "player_turn": 1, "deck_remaining": 79, "card": "Hydroponic Alfalfa", "card_id": 91, "target_player": 3}
+{"event_number": 40, "event": "turn_end", "phase": "normal", "player": 3, "player_turn": 1, "deck_remaining": 79, "goats": 2, "hand_cards": 5}
+{"event_number": 41, "event": "turn_start", "phase": "normal", "player": 4, "player_turn": 1, "deck_remaining": 79}
+{"event_number": 42, "event": "draw", "phase": "normal", "player": 4, "player_turn": 1, "deck_remaining": 78, "card": "Goat-Yoga Focus", "card_id": 74, "source": "normal_draw"}
+{"event_number": 43, "event": "play", "phase": "normal", "player": 4, "player_turn": 1, "deck_remaining": 78, "card": "Hydroponic Alfalfa", "card_id": 90, "waited_own_turns": 1}
+{"event_number": 44, "event": "special_attached", "phase": "normal", "player": 4, "player_turn": 1, "deck_remaining": 78, "card": "Hydroponic Alfalfa", "card_id": 90, "target_player": 4}
+{"event_number": 45, "event": "turn_end", "phase": "normal", "player": 4, "player_turn": 1, "deck_remaining": 78, "goats": 0, "hand_cards": 5}
+{"event_number": 46, "event": "turn_start", "phase": "normal", "player": 1, "player_turn": 2, "deck_remaining": 78}
+{"event_number": 47, "event": "draw", "phase": "normal", "player": 1, "player_turn": 2, "deck_remaining": 77, "card": "Chewed Wiring", "card_id": 92, "source": "normal_draw"}
+{"event_number": 48, "event": "play", "phase": "normal", "player": 1, "player_turn": 2, "deck_remaining": 77, "card": "Tractor Beam", "card_id": 60, "waited_own_turns": 2}
+{"event_number": 49, "event": "steal", "phase": "normal", "player": 1, "player_turn": 2, "deck_remaining": 77, "card": "Tractor Beam", "card_id": 60, "target_player": 2, "affected_card": "The G.O.A.T.", "affected_card_id": 31, "goat_value": 3}
+{"event_number": 50, "event": "turn_end", "phase": "normal", "player": 1, "player_turn": 2, "deck_remaining": 77, "goats": 6, "hand_cards": 5}
+{"event_number": 51, "event": "turn_start", "phase": "normal", "player": 2, "player_turn": 2, "deck_remaining": 77}
+{"event_number": 52, "event": "draw", "phase": "normal", "player": 2, "player_turn": 2, "deck_remaining": 76, "card": "Airlock Malfunction", "card_id": 46, "source": "normal_draw"}
+{"event_number": 53, "event": "play", "phase": "normal", "player": 2, "player_turn": 2, "deck_remaining": 76, "card": "The G.O.A.T.", "card_id": 30, "waited_own_turns": 2}
+{"event_number": 54, "event": "goat_added", "phase": "normal", "player": 2, "player_turn": 2, "deck_remaining": 76, "card": "The G.O.A.T.", "card_id": 30, "goats": 3}
+{"event_number": 55, "event": "turn_end", "phase": "normal", "player": 2, "player_turn": 2, "deck_remaining": 76, "goats": 3, "hand_cards": 5}
+{"event_number": 56, "event": "turn_start", "phase": "normal", "player": 3, "player_turn": 2, "deck_remaining": 76}
+{"event_number": 57, "event": "draw", "phase": "normal", "player": 3, "player_turn": 2, "deck_remaining": 75, "card": "The G.O.A.T.", "card_id": 27, "source": "alfalfa"}
+{"event_number": 58, "event": "draw", "phase": "normal", "player": 3, "player_turn": 2, "deck_remaining": 74, "card": "Airlock Malfunction", "card_id": 47, "source": "normal_draw"}
+{"event_number": 59, "event": "play", "phase": "normal", "player": 3, "player_turn": 2, "deck_remaining": 74, "card": "Quarantine Zone", "card_id": 100, "waited_own_turns": 2}
+{"event_number": 60, "event": "block", "phase": "normal", "player": 1, "player_turn": 2, "deck_remaining": 74, "card": "Tin-Foil Space Helmet", "card_id": 86, "waited_own_turns": 2}
+{"event_number": 61, "event": "blocked", "phase": "normal", "player": 3, "player_turn": 2, "deck_remaining": 74, "card": "Quarantine Zone", "card_id": 100, "by_player": 1, "block_card": "Tin-Foil Space Helmet", "target_player": 1}
+{"event_number": 62, "event": "discard", "phase": "normal", "player": 3, "player_turn": 2, "deck_remaining": 74, "card": "Goat-Yoga Focus", "card_id": 73, "waited_own_turns": 2}
+{"event_number": 63, "event": "turn_end", "phase": "normal", "player": 3, "player_turn": 2, "deck_remaining": 74, "goats": 2, "hand_cards": 5}
+{"event_number": 64, "event": "turn_start", "phase": "normal", "player": 4, "player_turn": 2, "deck_remaining": 74}
+{"event_number": 65, "event": "draw", "phase": "normal", "player": 4, "player_turn": 2, "deck_remaining": 73, "card": "Hydroponic Alfalfa", "card_id": 88, "source": "alfalfa"}
+{"event_number": 66, "event": "draw", "phase": "normal", "player": 4, "player_turn": 2, "deck_remaining": 72, "card": "Airlock Malfunction", "card_id": 40, "source": "normal_draw"}
+{"event_number": 67, "event": "play", "phase": "normal", "player": 4, "player_turn": 2, "deck_remaining": 72, "card": "Chewed Wiring", "card_id": 95, "waited_own_turns": 2}
+{"event_number": 68, "event": "special_attached", "phase": "normal", "player": 4, "player_turn": 2, "deck_remaining": 72, "card": "Chewed Wiring", "card_id": 95, "target_player": 1}
+{"event_number": 69, "event": "discard", "phase": "normal", "player": 4, "player_turn": 2, "deck_remaining": 72, "card": "Orbital Vacuum", "card_id": 64, "waited_own_turns": 2}
+{"event_number": 70, "event": "turn_end", "phase": "normal", "player": 4, "player_turn": 2, "deck_remaining": 72, "goats": 0, "hand_cards": 5}
+{"event_number": 71, "event": "turn_start", "phase": "normal", "player": 1, "player_turn": 3, "deck_remaining": 72}
+{"event_number": 72, "event": "draw", "phase": "normal", "player": 1, "player_turn": 3, "deck_remaining": 71, "card": "Laser Blast", "card_id": 52, "source": "normal_draw"}
+{"event_number": 73, "event": "play", "phase": "normal", "player": 1, "player_turn": 3, "deck_remaining": 71, "card": "Tractor Beam", "card_id": 61, "waited_own_turns": 3}
+{"event_number": 74, "event": "steal", "phase": "normal", "player": 1, "player_turn": 3, "deck_remaining": 71, "card": "Tractor Beam", "card_id": 61, "target_player": 2, "affected_card": "The G.O.A.T.", "affected_card_id": 30, "goat_value": 3}
+{"event_number": 75, "event": "discard", "phase": "normal", "player": 1, "player_turn": 3, "deck_remaining": 71, "card": "Laser Blast", "card_id": 49, "waited_own_turns": 3}
+{"event_number": 76, "event": "turn_end", "phase": "normal", "player": 1, "player_turn": 3, "deck_remaining": 71, "goats": 9, "hand_cards": 3}
+{"event_number": 77, "event": "turn_start", "phase": "normal", "player": 2, "player_turn": 3, "deck_remaining": 71}
+{"event_number": 78, "event": "draw", "phase": "normal", "player": 2, "player_turn": 3, "deck_remaining": 70, "card": "Airlock Malfunction", "card_id": 41, "source": "normal_draw"}
+{"event_number": 79, "event": "play", "phase": "normal", "player": 2, "player_turn": 3, "deck_remaining": 70, "card": "Airlock Malfunction", "card_id": 41, "waited_own_turns": 0}
+{"event_number": 80, "event": "eject", "phase": "normal", "player": 2, "player_turn": 3, "deck_remaining": 70, "card": "Airlock Malfunction", "card_id": 41, "target_player": 1, "affected_card": "The G.O.A.T.", "affected_card_id": 29, "goat_value": 3}
+{"event_number": 81, "event": "turn_end", "phase": "normal", "player": 2, "player_turn": 3, "deck_remaining": 70, "goats": 0, "hand_cards": 5}
+{"event_number": 82, "event": "turn_start", "phase": "normal", "player": 3, "player_turn": 3, "deck_remaining": 70}
+{"event_number": 83, "event": "draw", "phase": "normal", "player": 3, "player_turn": 3, "deck_remaining": 69, "card": "Astro-Billy", "card_id": 5, "source": "alfalfa"}
+{"event_number": 84, "event": "draw", "phase": "normal", "player": 3, "player_turn": 3, "deck_remaining": 68, "card": "Astro-Billy", "card_id": 0, "source": "normal_draw"}
+{"event_number": 85, "event": "play", "phase": "normal", "player": 3, "player_turn": 3, "deck_remaining": 68, "card": "The G.O.A.T.", "card_id": 27, "waited_own_turns": 1}
+{"event_number": 86, "event": "goat_added", "phase": "normal", "player": 3, "player_turn": 3, "deck_remaining": 68, "card": "The G.O.A.T.", "card_id": 27, "goats": 5}
+{"event_number": 87, "event": "discard", "phase": "normal", "player": 3, "player_turn": 3, "deck_remaining": 68, "card": "Astro-Billy", "card_id": 5, "waited_own_turns": 0}
+{"event_number": 88, "event": "turn_end", "phase": "normal", "player": 3, "player_turn": 3, "deck_remaining": 68, "goats": 5, "hand_cards": 5}
+{"event_number": 89, "event": "turn_start", "phase": "normal", "player": 4, "player_turn": 3, "deck_remaining": 68}
+{"event_number": 90, "event": "draw", "phase": "normal", "player": 4, "player_turn": 3, "deck_remaining": 67, "card": "Astro-Billy", "card_id": 6, "source": "alfalfa"}
+{"event_number": 91, "event": "draw", "phase": "normal", "player": 4, "player_turn": 3, "deck_remaining": 66, "card": "Chewed Wiring", "card_id": 94, "source": "normal_draw"}
+{"event_number": 92, "event": "play", "phase": "normal", "player": 4, "player_turn": 3, "deck_remaining": 66, "card": "Chewed Wiring", "card_id": 94, "waited_own_turns": 0}
+{"event_number": 93, "event": "special_attached", "phase": "normal", "player": 4, "player_turn": 3, "deck_remaining": 66, "card": "Chewed Wiring", "card_id": 94, "target_player": 3}
+{"event_number": 94, "event": "discard", "phase": "normal", "player": 4, "player_turn": 3, "deck_remaining": 66, "card": "Hydroponic Alfalfa", "card_id": 88, "waited_own_turns": 1}
+{"event_number": 95, "event": "turn_end", "phase": "normal", "player": 4, "player_turn": 3, "deck_remaining": 66, "goats": 0, "hand_cards": 5}
+{"event_number": 96, "event": "turn_start", "phase": "normal", "player": 1, "player_turn": 4, "deck_remaining": 66}
+{"event_number": 97, "event": "draw", "phase": "normal", "player": 1, "player_turn": 4, "deck_remaining": 65, "card": "Laser Blast", "card_id": 51, "source": "normal_draw"}
+{"event_number": 98, "event": "play", "phase": "normal", "player": 1, "player_turn": 4, "deck_remaining": 65, "card": "Twin Kids", "card_id": 21, "waited_own_turns": 3}
+{"event_number": 99, "event": "goat_added", "phase": "normal", "player": 1, "player_turn": 4, "deck_remaining": 65, "card": "Twin Kids", "card_id": 21, "goats": 8}
+{"event_number": 100, "event": "turn_end", "phase": "normal", "player": 1, "player_turn": 4, "deck_remaining": 65, "goats": 8, "hand_cards": 3}
+{"event_number": 101, "event": "turn_start", "phase": "normal", "player": 2, "player_turn": 4, "deck_remaining": 65}
+{"event_number": 102, "event": "draw", "phase": "normal", "player": 2, "player_turn": 4, "deck_remaining": 64, "card": "Quarantine Zone", "card_id": 103, "source": "normal_draw"}
+{"event_number": 103, "event": "play", "phase": "normal", "player": 2, "player_turn": 4, "deck_remaining": 64, "card": "Quarantine Zone", "card_id": 103, "waited_own_turns": 0}
+{"event_number": 104, "event": "special_attached", "phase": "normal", "player": 2, "player_turn": 4, "deck_remaining": 64, "card": "Quarantine Zone", "card_id": 103, "target_player": 1}
+{"event_number": 105, "event": "turn_end", "phase": "normal", "player": 2, "player_turn": 4, "deck_remaining": 64, "goats": 0, "hand_cards": 5}
+{"event_number": 106, "event": "turn_start", "phase": "normal", "player": 3, "player_turn": 4, "deck_remaining": 64}
+{"event_number": 107, "event": "draw", "phase": "normal", "player": 3, "player_turn": 4, "deck_remaining": 63, "card": "Airlock Malfunction", "card_id": 42, "source": "alfalfa"}
+{"event_number": 108, "event": "draw", "phase": "normal", "player": 3, "player_turn": 4, "deck_remaining": 62, "card": "Chewed Wiring", "card_id": 93, "source": "normal_draw"}
+{"event_number": 109, "event": "play", "phase": "normal", "player": 3, "player_turn": 4, "deck_remaining": 62, "card": "Airlock Malfunction", "card_id": 47, "waited_own_turns": 2}
+{"event_number": 110, "event": "eject", "phase": "normal", "player": 3, "player_turn": 4, "deck_remaining": 62, "card": "Airlock Malfunction", "card_id": 47, "target_player": 1, "affected_card": "Twin Kids", "affected_card_id": 21, "goat_value": 2}
+{"event_number": 111, "event": "discard", "phase": "normal", "player": 3, "player_turn": 4, "deck_remaining": 62, "card": "Astro-Billy", "card_id": 14, "waited_own_turns": 4}
+{"event_number": 112, "event": "discard", "phase": "normal", "player": 3, "player_turn": 4, "deck_remaining": 62, "card": "Astro-Billy", "card_id": 0, "waited_own_turns": 1}
+{"event_number": 113, "event": "discard", "phase": "normal", "player": 3, "player_turn": 4, "deck_remaining": 62, "card": "Astro-Billy", "card_id": 10, "waited_own_turns": 3}
+{"event_number": 114, "event": "turn_end", "phase": "normal", "player": 3, "player_turn": 4, "deck_remaining": 62, "goats": 5, "hand_cards": 3}
+{"event_number": 115, "event": "turn_start", "phase": "normal", "player": 4, "player_turn": 4, "deck_remaining": 62}
+{"event_number": 116, "event": "draw", "phase": "normal", "player": 4, "player_turn": 4, "deck_remaining": 61, "card": "Astro-Billy", "card_id": 11, "source": "alfalfa"}
+{"event_number": 117, "event": "draw", "phase": "normal", "player": 4, "player_turn": 4, "deck_remaining": 60, "card": "Space Wrench", "card_id": 67, "source": "normal_draw"}
+{"event_number": 118, "event": "play", "phase": "normal", "player": 4, "player_turn": 4, "deck_remaining": 60, "card": "Space Wrench", "card_id": 67, "waited_own_turns": 0}
+{"event_number": 119, "event": "modifier_removed", "phase": "normal", "player": 4, "player_turn": 4, "deck_remaining": 60, "card": "Space Wrench", "card_id": 67, "target_player": 3, "affected_card": "Hydroponic Alfalfa", "affected_card_id": 91}
+{"event_number": 120, "event": "discard", "phase": "normal", "player": 4, "player_turn": 4, "deck_remaining": 60, "card": "Goat-Yoga Focus", "card_id": 74, "waited_own_turns": 3}
+{"event_number": 121, "event": "turn_end", "phase": "normal", "player": 4, "player_turn": 4, "deck_remaining": 60, "goats": 0, "hand_cards": 5}
+{"event_number": 122, "event": "turn_start", "phase": "normal", "player": 1, "player_turn": 5, "deck_remaining": 60}
+{"event_number": 123, "event": "draw", "phase": "normal", "player": 1, "player_turn": 5, "deck_remaining": 59, "card": "Space Wrench", "card_id": 66, "source": "normal_draw"}
+{"event_number": 124, "event": "play", "phase": "normal", "player": 1, "player_turn": 5, "deck_remaining": 59, "card": "Space Wrench", "card_id": 66, "waited_own_turns": 0}
+{"event_number": 125, "event": "modifier_removed", "phase": "normal", "player": 1, "player_turn": 5, "deck_remaining": 59, "card": "Space Wrench", "card_id": 66, "target_player": 1, "affected_card": "Quarantine Zone", "affected_card_id": 103}
+{"event_number": 126, "event": "turn_end", "phase": "normal", "player": 1, "player_turn": 5, "deck_remaining": 59, "goats": 6, "hand_cards": 3}
+{"event_number": 127, "event": "turn_start", "phase": "normal", "player": 2, "player_turn": 5, "deck_remaining": 59}
+{"event_number": 128, "event": "draw", "phase": "normal", "player": 2, "player_turn": 5, "deck_remaining": 58, "card": "Tractor Beam", "card_id": 55, "source": "normal_draw"}
+{"event_number": 129, "event": "play", "phase": "normal", "player": 2, "player_turn": 5, "deck_remaining": 58, "card": "Tractor Beam", "card_id": 55, "waited_own_turns": 0}
+{"event_number": 130, "event": "steal", "phase": "normal", "player": 2, "player_turn": 5, "deck_remaining": 58, "card": "Tractor Beam", "card_id": 55, "target_player": 1, "affected_card": "The G.O.A.T.", "affected_card_id": 30, "goat_value": 3}
+{"event_number": 131, "event": "turn_end", "phase": "normal", "player": 2, "player_turn": 5, "deck_remaining": 58, "goats": 3, "hand_cards": 5}
+{"event_number": 132, "event": "turn_start", "phase": "normal", "player": 3, "player_turn": 5, "deck_remaining": 58}
+{"event_number": 133, "event": "draw", "phase": "normal", "player": 3, "player_turn": 5, "deck_remaining": 57, "card": "Laser Blast", "card_id": 48, "source": "normal_draw"}
+{"event_number": 134, "event": "play", "phase": "normal", "player": 3, "player_turn": 5, "deck_remaining": 57, "card": "Chewed Wiring", "card_id": 93, "waited_own_turns": 1}
+{"event_number": 135, "event": "special_attached", "phase": "normal", "player": 3, "player_turn": 5, "deck_remaining": 57, "card": "Chewed Wiring", "card_id": 93, "target_player": 2}
+{"event_number": 136, "event": "turn_end", "phase": "normal", "player": 3, "player_turn": 5, "deck_remaining": 57, "goats": 5, "hand_cards": 3}
+{"event_number": 137, "event": "turn_start", "phase": "normal", "player": 4, "player_turn": 5, "deck_remaining": 57}
+{"event_number": 138, "event": "draw", "phase": "normal", "player": 4, "player_turn": 5, "deck_remaining": 56, "card": "Cardboard Forcefield", "card_id": 82, "source": "alfalfa"}
+{"event_number": 139, "event": "draw", "phase": "normal", "player": 4, "player_turn": 5, "deck_remaining": 55, "card": "Twin Kids", "card_id": 17, "source": "normal_draw"}
+{"event_number": 140, "event": "play", "phase": "normal", "player": 4, "player_turn": 5, "deck_remaining": 55, "card": "Laser Blast", "card_id": 50, "waited_own_turns": 5}
+{"event_number": 141, "event": "destroy", "phase": "normal", "player": 4, "player_turn": 5, "deck_remaining": 55, "card": "Laser Blast", "card_id": 50, "target_player": 1, "affected_card": "The G.O.A.T.", "affected_card_id": 31, "goat_value": 3}
+{"event_number": 142, "event": "discard", "phase": "normal", "player": 4, "player_turn": 5, "deck_remaining": 55, "card": "Cardboard Forcefield", "card_id": 82, "waited_own_turns": 0}
+{"event_number": 143, "event": "turn_end", "phase": "normal", "player": 4, "player_turn": 5, "deck_remaining": 55, "goats": 0, "hand_cards": 5}
+{"event_number": 144, "event": "turn_start", "phase": "normal", "player": 1, "player_turn": 6, "deck_remaining": 55}
+{"event_number": 145, "event": "draw", "phase": "normal", "player": 1, "player_turn": 6, "deck_remaining": 54, "card": "Tractor Beam", "card_id": 58, "source": "normal_draw"}
+{"event_number": 146, "event": "play", "phase": "normal", "player": 1, "player_turn": 6, "deck_remaining": 54, "card": "Tractor Beam", "card_id": 58, "waited_own_turns": 0}
+{"event_number": 147, "event": "steal", "phase": "normal", "player": 1, "player_turn": 6, "deck_remaining": 54, "card": "Tractor Beam", "card_id": 58, "target_player": 3, "affected_card": "The G.O.A.T.", "affected_card_id": 27, "goat_value": 3}
+{"event_number": 148, "event": "turn_end", "phase": "normal", "player": 1, "player_turn": 6, "deck_remaining": 54, "goats": 3, "hand_cards": 3}
+{"event_number": 149, "event": "turn_start", "phase": "normal", "player": 2, "player_turn": 6, "deck_remaining": 54}
+{"event_number": 150, "event": "draw", "phase": "normal", "player": 2, "player_turn": 6, "deck_remaining": 53, "card": "Cardboard Forcefield", "card_id": 81, "source": "normal_draw"}
+{"event_number": 151, "event": "play", "phase": "normal", "player": 2, "player_turn": 6, "deck_remaining": 53, "card": "Airlock Malfunction", "card_id": 46, "waited_own_turns": 4}
+{"event_number": 152, "event": "eject", "phase": "normal", "player": 2, "player_turn": 6, "deck_remaining": 53, "card": "Airlock Malfunction", "card_id": 46, "target_player": 1, "affected_card": "The G.O.A.T.", "affected_card_id": 27, "goat_value": 3}
+{"event_number": 153, "event": "discard", "phase": "normal", "player": 2, "player_turn": 6, "deck_remaining": 53, "card": "Cardboard Forcefield", "card_id": 77, "waited_own_turns": 6}
+{"event_number": 154, "event": "discard", "phase": "normal", "player": 2, "player_turn": 6, "deck_remaining": 53, "card": "Cardboard Forcefield", "card_id": 81, "waited_own_turns": 0}
+{"event_number": 155, "event": "turn_end", "phase": "normal", "player": 2, "player_turn": 6, "deck_remaining": 53, "goats": 3, "hand_cards": 3}
+{"event_number": 156, "event": "turn_start", "phase": "normal", "player": 3, "player_turn": 6, "deck_remaining": 53}
+{"event_number": 157, "event": "draw", "phase": "normal", "player": 3, "player_turn": 6, "deck_remaining": 52, "card": "Hyper-Jumping Nanny", "card_id": 37, "source": "normal_draw"}
+{"event_number": 158, "event": "auto_play", "phase": "normal", "player": 3, "player_turn": 6, "deck_remaining": 52, "card": "Hyper-Jumping Nanny", "card_id": 37}
+{"event_number": 159, "event": "draw", "phase": "normal", "player": 3, "player_turn": 6, "deck_remaining": 51, "card": "Twin Kids", "card_id": 20, "source": "nanny_bonus"}
+{"event_number": 160, "event": "play", "phase": "normal", "player": 3, "player_turn": 6, "deck_remaining": 51, "card": "Airlock Malfunction", "card_id": 42, "waited_own_turns": 2}
+{"event_number": 161, "event": "eject", "phase": "normal", "player": 3, "player_turn": 6, "deck_remaining": 51, "card": "Airlock Malfunction", "card_id": 42, "target_player": 2, "affected_card": "The G.O.A.T.", "affected_card_id": 30, "goat_value": 3}
+{"event_number": 162, "event": "turn_end", "phase": "normal", "player": 3, "player_turn": 6, "deck_remaining": 51, "goats": 3, "hand_cards": 3}
+{"event_number": 163, "event": "turn_start", "phase": "normal", "player": 4, "player_turn": 6, "deck_remaining": 51}
+{"event_number": 164, "event": "draw", "phase": "normal", "player": 4, "player_turn": 6, "deck_remaining": 50, "card": "Space Sickness", "card_id": 96, "source": "alfalfa"}
+{"event_number": 165, "event": "draw", "phase": "normal", "player": 4, "player_turn": 6, "deck_remaining": 49, "card": "Space Wrench", "card_id": 71, "source": "normal_draw"}
+{"event_number": 166, "event": "play", "phase": "normal", "player": 4, "player_turn": 6, "deck_remaining": 49, "card": "Space Sickness", "card_id": 96, "waited_own_turns": 0}
+{"event_number": 167, "event": "special_attached", "phase": "normal", "player": 4, "player_turn": 6, "deck_remaining": 49, "card": "Space Sickness", "card_id": 96, "target_player": 3}
+{"event_number": 168, "event": "discard", "phase": "normal", "player": 4, "player_turn": 6, "deck_remaining": 49, "card": "Space Wrench", "card_id": 71, "waited_own_turns": 0}
+{"event_number": 169, "event": "turn_end", "phase": "normal", "player": 4, "player_turn": 6, "deck_remaining": 49, "goats": 0, "hand_cards": 5}
+{"event_number": 170, "event": "turn_start", "phase": "normal", "player": 1, "player_turn": 7, "deck_remaining": 49}
+{"event_number": 171, "event": "draw", "phase": "normal", "player": 1, "player_turn": 7, "deck_remaining": 48, "card": "Tin-Foil Space Helmet", "card_id": 83, "source": "normal_draw"}
+{"event_number": 172, "event": "play", "phase": "normal", "player": 1, "player_turn": 7, "deck_remaining": 48, "card": "Chewed Wiring", "card_id": 92, "waited_own_turns": 5}
+{"event_number": 173, "event": "special_attached", "phase": "normal", "player": 1, "player_turn": 7, "deck_remaining": 48, "card": "Chewed Wiring", "card_id": 92, "target_player": 4}
+{"event_number": 174, "event": "turn_end", "phase": "normal", "player": 1, "player_turn": 7, "deck_remaining": 48, "goats": 0, "hand_cards": 3}
+{"event_number": 175, "event": "turn_start", "phase": "normal", "player": 2, "player_turn": 7, "deck_remaining": 48}
+{"event_number": 176, "event": "draw", "phase": "normal", "player": 2, "player_turn": 7, "deck_remaining": 47, "card": "Astro-Billy", "card_id": 4, "source": "normal_draw"}
+{"event_number": 177, "event": "play", "phase": "normal", "player": 2, "player_turn": 7, "deck_remaining": 47, "card": "Space Wrench", "card_id": 69, "waited_own_turns": 7}
+{"event_number": 178, "event": "modifier_removed", "phase": "normal", "player": 2, "player_turn": 7, "deck_remaining": 47, "card": "Space Wrench", "card_id": 69, "target_player": 4, "affected_card": "Hydroponic Alfalfa", "affected_card_id": 90}
+{"event_number": 179, "event": "turn_end", "phase": "normal", "player": 2, "player_turn": 7, "deck_remaining": 47, "goats": 0, "hand_cards": 3}
+{"event_number": 180, "event": "turn_start", "phase": "normal", "player": 3, "player_turn": 7, "deck_remaining": 47}
+{"event_number": 181, "event": "draw", "phase": "normal", "player": 3, "player_turn": 7, "deck_remaining": 46, "card": "Hyper-Jumping Nanny", "card_id": 36, "source": "normal_draw"}
+{"event_number": 182, "event": "auto_play", "phase": "normal", "player": 3, "player_turn": 7, "deck_remaining": 46, "card": "Hyper-Jumping Nanny", "card_id": 36}
+{"event_number": 183, "event": "draw", "phase": "normal", "player": 3, "player_turn": 7, "deck_remaining": 45, "card": "Twin Kids", "card_id": 15, "source": "nanny_bonus"}
+{"event_number": 184, "event": "play", "phase": "normal", "player": 3, "player_turn": 7, "deck_remaining": 45, "card": "Twin Kids", "card_id": 15, "waited_own_turns": 0}
+{"event_number": 185, "event": "goat_added", "phase": "normal", "player": 3, "player_turn": 7, "deck_remaining": 45, "card": "Twin Kids", "card_id": 15, "goats": 6}
+{"event_number": 186, "event": "turn_end", "phase": "normal", "player": 3, "player_turn": 7, "deck_remaining": 45, "goats": 6, "hand_cards": 3}
+{"event_number": 187, "event": "turn_start", "phase": "normal", "player": 4, "player_turn": 7, "deck_remaining": 45}
+{"event_number": 188, "event": "draw", "phase": "normal", "player": 4, "player_turn": 7, "deck_remaining": 44, "card": "Space Wrench", "card_id": 70, "source": "normal_draw"}
+{"event_number": 189, "event": "play", "phase": "normal", "player": 4, "player_turn": 7, "deck_remaining": 44, "card": "Twin Kids", "card_id": 17, "waited_own_turns": 2}
+{"event_number": 190, "event": "goat_added", "phase": "normal", "player": 4, "player_turn": 7, "deck_remaining": 44, "card": "Twin Kids", "card_id": 17, "goats": 2}
+{"event_number": 191, "event": "discard", "phase": "normal", "player": 4, "player_turn": 7, "deck_remaining": 44, "card": "Airlock Malfunction", "card_id": 40, "waited_own_turns": 5}
+{"event_number": 192, "event": "discard", "phase": "normal", "player": 4, "player_turn": 7, "deck_remaining": 44, "card": "Astro-Billy", "card_id": 11, "waited_own_turns": 3}
+{"event_number": 193, "event": "turn_end", "phase": "normal", "player": 4, "player_turn": 7, "deck_remaining": 44, "goats": 2, "hand_cards": 3}
+{"event_number": 194, "event": "turn_start", "phase": "normal", "player": 1, "player_turn": 8, "deck_remaining": 44}
+{"event_number": 195, "event": "draw", "phase": "normal", "player": 1, "player_turn": 8, "deck_remaining": 43, "card": "The G.O.A.T.", "card_id": 32, "source": "normal_draw"}
+{"event_number": 196, "event": "play", "phase": "normal", "player": 1, "player_turn": 8, "deck_remaining": 43, "card": "The G.O.A.T.", "card_id": 32, "waited_own_turns": 0}
+{"event_number": 197, "event": "goat_added", "phase": "normal", "player": 1, "player_turn": 8, "deck_remaining": 43, "card": "The G.O.A.T.", "card_id": 32, "goats": 3}
+{"event_number": 198, "event": "turn_end", "phase": "normal", "player": 1, "player_turn": 8, "deck_remaining": 43, "goats": 3, "hand_cards": 3}
+{"event_number": 199, "event": "turn_start", "phase": "normal", "player": 2, "player_turn": 8, "deck_remaining": 43}
+{"event_number": 200, "event": "draw", "phase": "normal", "player": 2, "player_turn": 8, "deck_remaining": 42, "card": "The G.O.A.T.", "card_id": 33, "source": "normal_draw"}
+{"event_number": 201, "event": "play", "phase": "normal", "player": 2, "player_turn": 8, "deck_remaining": 42, "card": "The G.O.A.T.", "card_id": 33, "waited_own_turns": 0}
+{"event_number": 202, "event": "goat_added", "phase": "normal", "player": 2, "player_turn": 8, "deck_remaining": 42, "card": "The G.O.A.T.", "card_id": 33, "goats": 3}
+{"event_number": 203, "event": "turn_end", "phase": "normal", "player": 2, "player_turn": 8, "deck_remaining": 42, "goats": 3, "hand_cards": 3}
+{"event_number": 204, "event": "turn_start", "phase": "normal", "player": 3, "player_turn": 8, "deck_remaining": 42}
+{"event_number": 205, "event": "draw", "phase": "normal", "player": 3, "player_turn": 8, "deck_remaining": 41, "card": "Airlock Malfunction", "card_id": 43, "source": "normal_draw"}
+{"event_number": 206, "event": "play", "phase": "normal", "player": 3, "player_turn": 8, "deck_remaining": 41, "card": "Twin Kids", "card_id": 20, "waited_own_turns": 2}
+{"event_number": 207, "event": "goat_added", "phase": "normal", "player": 3, "player_turn": 8, "deck_remaining": 41, "card": "Twin Kids", "card_id": 20, "goats": 8}
+{"event_number": 208, "event": "turn_end", "phase": "normal", "player": 3, "player_turn": 8, "deck_remaining": 41, "goats": 8, "hand_cards": 3}
+{"event_number": 209, "event": "turn_start", "phase": "normal", "player": 4, "player_turn": 8, "deck_remaining": 41}
+{"event_number": 210, "event": "draw", "phase": "normal", "player": 4, "player_turn": 8, "deck_remaining": 40, "card": "Astro-Billy", "card_id": 9, "source": "normal_draw"}
+{"event_number": 211, "event": "play", "phase": "normal", "player": 4, "player_turn": 8, "deck_remaining": 40, "card": "Space Wrench", "card_id": 70, "waited_own_turns": 1}
+{"event_number": 212, "event": "modifier_removed", "phase": "normal", "player": 4, "player_turn": 8, "deck_remaining": 40, "card": "Space Wrench", "card_id": 70, "target_player": 4, "affected_card": "Chewed Wiring", "affected_card_id": 92}
+{"event_number": 213, "event": "turn_end", "phase": "normal", "player": 4, "player_turn": 8, "deck_remaining": 40, "goats": 2, "hand_cards": 3}
+{"event_number": 214, "event": "turn_start", "phase": "normal", "player": 1, "player_turn": 9, "deck_remaining": 40}
+{"event_number": 215, "event": "draw", "phase": "normal", "player": 1, "player_turn": 9, "deck_remaining": 39, "card": "Goat-Yoga Focus", "card_id": 76, "source": "normal_draw"}
+{"event_number": 216, "event": "play", "phase": "normal", "player": 1, "player_turn": 9, "deck_remaining": 39, "card": "Laser Blast", "card_id": 52, "waited_own_turns": 6}
+{"event_number": 217, "event": "destroy", "phase": "normal", "player": 1, "player_turn": 9, "deck_remaining": 39, "card": "Laser Blast", "card_id": 52, "target_player": 2, "affected_card": "The G.O.A.T.", "affected_card_id": 33, "goat_value": 3}
+{"event_number": 218, "event": "turn_end", "phase": "normal", "player": 1, "player_turn": 9, "deck_remaining": 39, "goats": 3, "hand_cards": 3}
+{"event_number": 219, "event": "turn_start", "phase": "normal", "player": 2, "player_turn": 9, "deck_remaining": 39}
+{"event_number": 220, "event": "draw", "phase": "normal", "player": 2, "player_turn": 9, "deck_remaining": 38, "card": "Orbital Vacuum", "card_id": 65, "source": "normal_draw"}
+{"event_number": 221, "event": "play", "phase": "normal", "player": 2, "player_turn": 9, "deck_remaining": 38, "card": "Orbital Vacuum", "card_id": 65, "waited_own_turns": 0}
+{"event_number": 222, "event": "scoop", "phase": "normal", "player": 2, "player_turn": 9, "deck_remaining": 38, "card": "Orbital Vacuum", "card_id": 65, "goat_value": 11, "affected_card_ids": [29, 21, 27, 30]}
+{"event_number": 223, "event": "turn_end", "phase": "normal", "player": 2, "player_turn": 9, "deck_remaining": 38, "goats": 11, "hand_cards": 3}
+{"event_number": 224, "event": "turn_start", "phase": "normal", "player": 3, "player_turn": 9, "deck_remaining": 38}
+{"event_number": 225, "event": "draw", "phase": "normal", "player": 3, "player_turn": 9, "deck_remaining": 37, "card": "Twin Kids", "card_id": 19, "source": "normal_draw"}
+{"event_number": 226, "event": "play", "phase": "normal", "player": 3, "player_turn": 9, "deck_remaining": 37, "card": "Twin Kids", "card_id": 19, "waited_own_turns": 0}
+{"event_number": 227, "event": "goat_added", "phase": "normal", "player": 3, "player_turn": 9, "deck_remaining": 37, "card": "Twin Kids", "card_id": 19, "goats": 10}
+{"event_number": 228, "event": "turn_end", "phase": "normal", "player": 3, "player_turn": 9, "deck_remaining": 37, "goats": 10, "hand_cards": 3}
+{"event_number": 229, "event": "turn_start", "phase": "normal", "player": 4, "player_turn": 9, "deck_remaining": 37}
+{"event_number": 230, "event": "draw", "phase": "normal", "player": 4, "player_turn": 9, "deck_remaining": 36, "card": "Orbital Vacuum", "card_id": 63, "source": "normal_draw"}
+{"event_number": 231, "event": "play", "phase": "normal", "player": 4, "player_turn": 9, "deck_remaining": 36, "card": "Astro-Billy", "card_id": 6, "waited_own_turns": 6}
+{"event_number": 232, "event": "goat_added", "phase": "normal", "player": 4, "player_turn": 9, "deck_remaining": 36, "card": "Astro-Billy", "card_id": 6, "goats": 3}
+{"event_number": 233, "event": "turn_end", "phase": "normal", "player": 4, "player_turn": 9, "deck_remaining": 36, "goats": 3, "hand_cards": 3}
+{"event_number": 234, "event": "turn_start", "phase": "normal", "player": 1, "player_turn": 10, "deck_remaining": 36}
+{"event_number": 235, "event": "draw", "phase": "normal", "player": 1, "player_turn": 10, "deck_remaining": 35, "card": "Goat-Yoga Focus", "card_id": 75, "source": "normal_draw"}
+{"event_number": 236, "event": "play", "phase": "normal", "player": 1, "player_turn": 10, "deck_remaining": 35, "card": "Laser Blast", "card_id": 51, "waited_own_turns": 6}
+{"event_number": 237, "event": "destroy", "phase": "normal", "player": 1, "player_turn": 10, "deck_remaining": 35, "card": "Laser Blast", "card_id": 51, "target_player": 2, "affected_card": "Twin Kids", "affected_card_id": 21, "goat_value": 2}
+{"event_number": 238, "event": "turn_end", "phase": "normal", "player": 1, "player_turn": 10, "deck_remaining": 35, "goats": 3, "hand_cards": 3}
+{"event_number": 239, "event": "turn_start", "phase": "normal", "player": 2, "player_turn": 10, "deck_remaining": 35}
+{"event_number": 240, "event": "draw", "phase": "normal", "player": 2, "player_turn": 10, "deck_remaining": 34, "card": "Twin Kids", "card_id": 18, "source": "normal_draw"}
+{"event_number": 241, "event": "play", "phase": "normal", "player": 2, "player_turn": 10, "deck_remaining": 34, "card": "Twin Kids", "card_id": 16, "waited_own_turns": 9}
+{"event_number": 242, "event": "goat_added", "phase": "normal", "player": 2, "player_turn": 10, "deck_remaining": 34, "card": "Twin Kids", "card_id": 16, "goats": 11}
+{"event_number": 243, "event": "turn_end", "phase": "normal", "player": 2, "player_turn": 10, "deck_remaining": 34, "goats": 11, "hand_cards": 3}
+{"event_number": 244, "event": "turn_start", "phase": "normal", "player": 3, "player_turn": 10, "deck_remaining": 34}
+{"event_number": 245, "event": "draw", "phase": "normal", "player": 3, "player_turn": 10, "deck_remaining": 33, "card": "Cardboard Forcefield", "card_id": 80, "source": "normal_draw"}
+{"event_number": 246, "event": "play", "phase": "normal", "player": 3, "player_turn": 10, "deck_remaining": 33, "card": "Astro-Billy", "card_id": 1, "waited_own_turns": 10}
+{"event_number": 247, "event": "goat_added", "phase": "normal", "player": 3, "player_turn": 10, "deck_remaining": 33, "card": "Astro-Billy", "card_id": 1, "goats": 11}
+{"event_number": 248, "event": "turn_end", "phase": "normal", "player": 3, "player_turn": 10, "deck_remaining": 33, "goats": 11, "hand_cards": 3}
+{"event_number": 249, "event": "turn_start", "phase": "normal", "player": 4, "player_turn": 10, "deck_remaining": 33}
+{"event_number": 250, "event": "draw", "phase": "normal", "player": 4, "player_turn": 10, "deck_remaining": 32, "card": "Quarantine Zone", "card_id": 101, "source": "normal_draw"}
+{"event_number": 251, "event": "play", "phase": "normal", "player": 4, "player_turn": 10, "deck_remaining": 32, "card": "Quarantine Zone", "card_id": 101, "waited_own_turns": 0}
+{"event_number": 252, "event": "special_attached", "phase": "normal", "player": 4, "player_turn": 10, "deck_remaining": 32, "card": "Quarantine Zone", "card_id": 101, "target_player": 3}
+{"event_number": 253, "event": "turn_end", "phase": "normal", "player": 4, "player_turn": 10, "deck_remaining": 32, "goats": 3, "hand_cards": 3}
+{"event_number": 254, "event": "turn_start", "phase": "normal", "player": 1, "player_turn": 11, "deck_remaining": 32}
+{"event_number": 255, "event": "draw", "phase": "normal", "player": 1, "player_turn": 11, "deck_remaining": 31, "card": "The G.O.A.T.", "card_id": 34, "source": "normal_draw"}
+{"event_number": 256, "event": "play", "phase": "normal", "player": 1, "player_turn": 11, "deck_remaining": 31, "card": "The G.O.A.T.", "card_id": 34, "waited_own_turns": 0}
+{"event_number": 257, "event": "goat_added", "phase": "normal", "player": 1, "player_turn": 11, "deck_remaining": 31, "card": "The G.O.A.T.", "card_id": 34, "goats": 6}
+{"event_number": 258, "event": "turn_end", "phase": "normal", "player": 1, "player_turn": 11, "deck_remaining": 31, "goats": 6, "hand_cards": 3}
+{"event_number": 259, "event": "turn_start", "phase": "normal", "player": 2, "player_turn": 11, "deck_remaining": 31}
+{"event_number": 260, "event": "draw", "phase": "normal", "player": 2, "player_turn": 11, "deck_remaining": 30, "card": "Astro-Billy", "card_id": 13, "source": "normal_draw"}
+{"event_number": 261, "event": "play", "phase": "normal", "player": 2, "player_turn": 11, "deck_remaining": 30, "card": "Twin Kids", "card_id": 18, "waited_own_turns": 1}
+{"event_number": 262, "event": "goat_added", "phase": "normal", "player": 2, "player_turn": 11, "deck_remaining": 30, "card": "Twin Kids", "card_id": 18, "goats": 13}
+{"event_number": 263, "event": "turn_end", "phase": "normal", "player": 2, "player_turn": 11, "deck_remaining": 30, "goats": 13, "hand_cards": 3}
+{"event_number": 264, "event": "turn_start", "phase": "normal", "player": 3, "player_turn": 11, "deck_remaining": 30}
+{"event_number": 265, "event": "draw", "phase": "normal", "player": 3, "player_turn": 11, "deck_remaining": 29, "card": "Space Sickness", "card_id": 98, "source": "normal_draw"}
+{"event_number": 266, "event": "play", "phase": "normal", "player": 3, "player_turn": 11, "deck_remaining": 29, "card": "Space Sickness", "card_id": 98, "waited_own_turns": 0}
+{"event_number": 267, "event": "special_attached", "phase": "normal", "player": 3, "player_turn": 11, "deck_remaining": 29, "card": "Space Sickness", "card_id": 98, "target_player": 2}
+{"event_number": 268, "event": "turn_end", "phase": "normal", "player": 3, "player_turn": 11, "deck_remaining": 29, "goats": 11, "hand_cards": 3}
+{"event_number": 269, "event": "turn_start", "phase": "normal", "player": 4, "player_turn": 11, "deck_remaining": 29}
+{"event_number": 270, "event": "draw", "phase": "normal", "player": 4, "player_turn": 11, "deck_remaining": 28, "card": "Twin Kids", "card_id": 24, "source": "normal_draw"}
+{"event_number": 271, "event": "play", "phase": "normal", "player": 4, "player_turn": 11, "deck_remaining": 28, "card": "Twin Kids", "card_id": 24, "waited_own_turns": 0}
+{"event_number": 272, "event": "goat_added", "phase": "normal", "player": 4, "player_turn": 11, "deck_remaining": 28, "card": "Twin Kids", "card_id": 24, "goats": 5}
+{"event_number": 273, "event": "turn_end", "phase": "normal", "player": 4, "player_turn": 11, "deck_remaining": 28, "goats": 5, "hand_cards": 3}
+{"event_number": 274, "event": "turn_start", "phase": "normal", "player": 1, "player_turn": 12, "deck_remaining": 28}
+{"event_number": 275, "event": "draw", "phase": "normal", "player": 1, "player_turn": 12, "deck_remaining": 27, "card": "Space Sickness", "card_id": 99, "source": "normal_draw"}
+{"event_number": 276, "event": "play", "phase": "normal", "player": 1, "player_turn": 12, "deck_remaining": 27, "card": "Space Sickness", "card_id": 99, "waited_own_turns": 0}
+{"event_number": 277, "event": "special_attached", "phase": "normal", "player": 1, "player_turn": 12, "deck_remaining": 27, "card": "Space Sickness", "card_id": 99, "target_player": 4}
+{"event_number": 278, "event": "turn_end", "phase": "normal", "player": 1, "player_turn": 12, "deck_remaining": 27, "goats": 6, "hand_cards": 3}
+{"event_number": 279, "event": "turn_start", "phase": "normal", "player": 2, "player_turn": 12, "deck_remaining": 27}
+{"event_number": 280, "event": "draw", "phase": "normal", "player": 2, "player_turn": 12, "deck_remaining": 26, "card": "Tin-Foil Space Helmet", "card_id": 87, "source": "normal_draw"}
+{"event_number": 281, "event": "play", "phase": "normal", "player": 2, "player_turn": 12, "deck_remaining": 26, "card": "Astro-Billy", "card_id": 13, "waited_own_turns": 1}
+{"event_number": 282, "event": "goat_added", "phase": "normal", "player": 2, "player_turn": 12, "deck_remaining": 26, "card": "Astro-Billy", "card_id": 13, "goats": 14}
+{"event_number": 283, "event": "turn_end", "phase": "normal", "player": 2, "player_turn": 12, "deck_remaining": 26, "goats": 14, "hand_cards": 3}
+{"event_number": 284, "event": "turn_start", "phase": "normal", "player": 3, "player_turn": 12, "deck_remaining": 26}
+{"event_number": 285, "event": "draw", "phase": "normal", "player": 3, "player_turn": 12, "deck_remaining": 25, "card": "Hyper-Jumping Nanny", "card_id": 38, "source": "normal_draw"}
+{"event_number": 286, "event": "nanny_quarantined", "phase": "normal", "player": 3, "player_turn": 12, "deck_remaining": 25, "card": "Hyper-Jumping Nanny", "card_id": 38, "explanation": "Kept in hand; bonus draw still applies."}
+{"event_number": 287, "event": "draw", "phase": "normal", "player": 3, "player_turn": 12, "deck_remaining": 24, "card": "Tractor Beam", "card_id": 59, "source": "nanny_bonus"}
+{"event_number": 288, "event": "draw", "phase": "normal", "player": 3, "player_turn": 12, "deck_remaining": 23, "card": "Space Wrench", "card_id": 68, "source": "extra_draw"}
+{"event_number": 289, "event": "discard", "phase": "normal", "player": 3, "player_turn": 12, "deck_remaining": 23, "card": "Laser Blast", "card_id": 48, "waited_own_turns": 7}
+{"event_number": 290, "event": "discard", "phase": "normal", "player": 3, "player_turn": 12, "deck_remaining": 23, "card": "Tractor Beam", "card_id": 59, "waited_own_turns": 0}
+{"event_number": 291, "event": "discard", "phase": "normal", "player": 3, "player_turn": 12, "deck_remaining": 23, "card": "Airlock Malfunction", "card_id": 43, "waited_own_turns": 4}
+{"event_number": 292, "event": "turn_end", "phase": "normal", "player": 3, "player_turn": 12, "deck_remaining": 23, "goats": 11, "hand_cards": 3}
+{"event_number": 293, "event": "turn_start", "phase": "normal", "player": 4, "player_turn": 12, "deck_remaining": 23}
+{"event_number": 294, "event": "draw", "phase": "normal", "player": 4, "player_turn": 12, "deck_remaining": 22, "card": "Astro-Billy", "card_id": 2, "source": "normal_draw"}
+{"event_number": 295, "event": "play", "phase": "normal", "player": 4, "player_turn": 12, "deck_remaining": 22, "card": "Astro-Billy", "card_id": 9, "waited_own_turns": 4}
+{"event_number": 296, "event": "goat_added", "phase": "normal", "player": 4, "player_turn": 12, "deck_remaining": 22, "card": "Astro-Billy", "card_id": 9, "goats": 6}
+{"event_number": 297, "event": "turn_end", "phase": "normal", "player": 4, "player_turn": 12, "deck_remaining": 22, "goats": 6, "hand_cards": 3}
+{"event_number": 298, "event": "turn_start", "phase": "normal", "player": 1, "player_turn": 13, "deck_remaining": 22}
+{"event_number": 299, "event": "draw", "phase": "normal", "player": 1, "player_turn": 13, "deck_remaining": 21, "card": "Hydroponic Alfalfa", "card_id": 89, "source": "normal_draw"}
+{"event_number": 300, "event": "play", "phase": "normal", "player": 1, "player_turn": 13, "deck_remaining": 21, "card": "Hydroponic Alfalfa", "card_id": 89, "waited_own_turns": 0}
+{"event_number": 301, "event": "special_attached", "phase": "normal", "player": 1, "player_turn": 13, "deck_remaining": 21, "card": "Hydroponic Alfalfa", "card_id": 89, "target_player": 1}
+{"event_number": 302, "event": "turn_end", "phase": "normal", "player": 1, "player_turn": 13, "deck_remaining": 21, "goats": 6, "hand_cards": 3}
+{"event_number": 303, "event": "turn_start", "phase": "normal", "player": 2, "player_turn": 13, "deck_remaining": 21}
+{"event_number": 304, "event": "draw", "phase": "normal", "player": 2, "player_turn": 13, "deck_remaining": 20, "card": "Cardboard Forcefield", "card_id": 78, "source": "normal_draw"}
+{"event_number": 305, "event": "play", "phase": "normal", "player": 2, "player_turn": 13, "deck_remaining": 20, "card": "Astro-Billy", "card_id": 4, "waited_own_turns": 6}
+{"event_number": 306, "event": "goat_added", "phase": "normal", "player": 2, "player_turn": 13, "deck_remaining": 20, "card": "Astro-Billy", "card_id": 4, "goats": 15}
+{"event_number": 307, "event": "turn_end", "phase": "normal", "player": 2, "player_turn": 13, "deck_remaining": 20, "goats": 15, "hand_cards": 3}
+{"event_number": 308, "event": "turn_start", "phase": "normal", "player": 3, "player_turn": 13, "deck_remaining": 20}
+{"event_number": 309, "event": "draw", "phase": "normal", "player": 3, "player_turn": 13, "deck_remaining": 19, "card": "Tractor Beam", "card_id": 56, "source": "normal_draw"}
+{"event_number": 310, "event": "play", "phase": "normal", "player": 3, "player_turn": 13, "deck_remaining": 19, "card": "Space Wrench", "card_id": 68, "waited_own_turns": 1}
+{"event_number": 311, "event": "modifier_removed", "phase": "normal", "player": 3, "player_turn": 13, "deck_remaining": 19, "card": "Space Wrench", "card_id": 68, "target_player": 3, "affected_card": "Quarantine Zone", "affected_card_id": 101}
+{"event_number": 312, "event": "turn_end", "phase": "normal", "player": 3, "player_turn": 13, "deck_remaining": 19, "goats": 11, "hand_cards": 3}
+{"event_number": 313, "event": "turn_start", "phase": "normal", "player": 4, "player_turn": 13, "deck_remaining": 19}
+{"event_number": 314, "event": "draw", "phase": "normal", "player": 4, "player_turn": 13, "deck_remaining": 18, "card": "Astro-Billy", "card_id": 3, "source": "normal_draw"}
+{"event_number": 315, "event": "play", "phase": "normal", "player": 4, "player_turn": 13, "deck_remaining": 18, "card": "Astro-Billy", "card_id": 2, "waited_own_turns": 1}
+{"event_number": 316, "event": "goat_added", "phase": "normal", "player": 4, "player_turn": 13, "deck_remaining": 18, "card": "Astro-Billy", "card_id": 2, "goats": 7}
+{"event_number": 317, "event": "turn_end", "phase": "normal", "player": 4, "player_turn": 13, "deck_remaining": 18, "goats": 7, "hand_cards": 3}
+{"event_number": 318, "event": "turn_start", "phase": "normal", "player": 1, "player_turn": 14, "deck_remaining": 18}
+{"event_number": 319, "event": "draw", "phase": "normal", "player": 1, "player_turn": 14, "deck_remaining": 17, "card": "Airlock Malfunction", "card_id": 45, "source": "alfalfa"}
+{"event_number": 320, "event": "draw", "phase": "normal", "player": 1, "player_turn": 14, "deck_remaining": 16, "card": "Twin Kids", "card_id": 23, "source": "normal_draw"}
+{"event_number": 321, "event": "play", "phase": "normal", "player": 1, "player_turn": 14, "deck_remaining": 16, "card": "Twin Kids", "card_id": 23, "waited_own_turns": 0}
+{"event_number": 322, "event": "goat_added", "phase": "normal", "player": 1, "player_turn": 14, "deck_remaining": 16, "card": "Twin Kids", "card_id": 23, "goats": 8}
+{"event_number": 323, "event": "discard", "phase": "normal", "player": 1, "player_turn": 14, "deck_remaining": 16, "card": "Goat-Yoga Focus", "card_id": 76, "waited_own_turns": 5}
+{"event_number": 324, "event": "turn_end", "phase": "normal", "player": 1, "player_turn": 14, "deck_remaining": 16, "goats": 8, "hand_cards": 3}
+{"event_number": 325, "event": "turn_start", "phase": "normal", "player": 2, "player_turn": 14, "deck_remaining": 16}
+{"event_number": 326, "event": "draw", "phase": "normal", "player": 2, "player_turn": 14, "deck_remaining": 15, "card": "Tin-Foil Space Helmet", "card_id": 85, "source": "normal_draw"}
+{"event_number": 327, "event": "play", "phase": "normal", "player": 2, "player_turn": 14, "deck_remaining": 15, "card": "Astro-Billy", "card_id": 8, "waited_own_turns": 14}
+{"event_number": 328, "event": "goat_added", "phase": "normal", "player": 2, "player_turn": 14, "deck_remaining": 15, "card": "Astro-Billy", "card_id": 8, "goats": 16}
+{"event_number": 329, "event": "turn_end", "phase": "normal", "player": 2, "player_turn": 14, "deck_remaining": 15, "goats": 16, "hand_cards": 3}
+{"event_number": 330, "event": "turn_start", "phase": "normal", "player": 3, "player_turn": 14, "deck_remaining": 15}
+{"event_number": 331, "event": "draw", "phase": "normal", "player": 3, "player_turn": 14, "deck_remaining": 14, "card": "Orbital Vacuum", "card_id": 62, "source": "normal_draw"}
+{"event_number": 332, "event": "play", "phase": "normal", "player": 3, "player_turn": 14, "deck_remaining": 14, "card": "Hyper-Jumping Nanny", "card_id": 38, "waited_own_turns": 2}
+{"event_number": 333, "event": "goat_added", "phase": "normal", "player": 3, "player_turn": 14, "deck_remaining": 14, "card": "Hyper-Jumping Nanny", "card_id": 38, "goats": 12}
+{"event_number": 334, "event": "turn_end", "phase": "normal", "player": 3, "player_turn": 14, "deck_remaining": 14, "goats": 12, "hand_cards": 3}
+{"event_number": 335, "event": "turn_start", "phase": "normal", "player": 4, "player_turn": 14, "deck_remaining": 14}
+{"event_number": 336, "event": "draw", "phase": "normal", "player": 4, "player_turn": 14, "deck_remaining": 13, "card": "Space Sickness", "card_id": 97, "source": "normal_draw"}
+{"event_number": 337, "event": "play", "phase": "normal", "player": 4, "player_turn": 14, "deck_remaining": 13, "card": "Astro-Billy", "card_id": 7, "waited_own_turns": 14}
+{"event_number": 338, "event": "goat_added", "phase": "normal", "player": 4, "player_turn": 14, "deck_remaining": 13, "card": "Astro-Billy", "card_id": 7, "goats": 8}
+{"event_number": 339, "event": "turn_end", "phase": "normal", "player": 4, "player_turn": 14, "deck_remaining": 13, "goats": 8, "hand_cards": 3}
+{"event_number": 340, "event": "turn_start", "phase": "normal", "player": 1, "player_turn": 15, "deck_remaining": 13}
+{"event_number": 341, "event": "draw", "phase": "normal", "player": 1, "player_turn": 15, "deck_remaining": 12, "card": "Goat-Yoga Focus", "card_id": 72, "source": "alfalfa"}
+{"event_number": 342, "event": "draw", "phase": "normal", "player": 1, "player_turn": 15, "deck_remaining": 11, "card": "Airlock Malfunction", "card_id": 44, "source": "normal_draw"}
+{"event_number": 343, "event": "play", "phase": "normal", "player": 1, "player_turn": 15, "deck_remaining": 11, "card": "Airlock Malfunction", "card_id": 44, "waited_own_turns": 0}
+{"event_number": 344, "event": "block", "phase": "normal", "player": 2, "player_turn": 14, "deck_remaining": 11, "card": "Cardboard Forcefield", "card_id": 78, "waited_own_turns": 1}
+{"event_number": 345, "event": "blocked", "phase": "normal", "player": 1, "player_turn": 15, "deck_remaining": 11, "card": "Airlock Malfunction", "card_id": 44, "by_player": 2, "block_card": "Cardboard Forcefield", "target_player": 2}
+{"event_number": 346, "event": "discard", "phase": "normal", "player": 1, "player_turn": 15, "deck_remaining": 11, "card": "Goat-Yoga Focus", "card_id": 72, "waited_own_turns": 0}
+{"event_number": 347, "event": "turn_end", "phase": "normal", "player": 1, "player_turn": 15, "deck_remaining": 11, "goats": 8, "hand_cards": 3}
+{"event_number": 348, "event": "turn_start", "phase": "normal", "player": 2, "player_turn": 15, "deck_remaining": 11}
+{"event_number": 349, "event": "draw", "phase": "normal", "player": 2, "player_turn": 15, "deck_remaining": 10, "card": "Twin Kids", "card_id": 22, "source": "normal_draw"}
+{"event_number": 350, "event": "play", "phase": "normal", "player": 2, "player_turn": 15, "deck_remaining": 10, "card": "Twin Kids", "card_id": 22, "waited_own_turns": 0}
+{"event_number": 351, "event": "goat_added", "phase": "normal", "player": 2, "player_turn": 15, "deck_remaining": 10, "card": "Twin Kids", "card_id": 22, "goats": 18}
+{"event_number": 352, "event": "turn_end", "phase": "normal", "player": 2, "player_turn": 15, "deck_remaining": 10, "goats": 18, "hand_cards": 2}
+{"event_number": 353, "event": "turn_start", "phase": "normal", "player": 3, "player_turn": 15, "deck_remaining": 10}
+{"event_number": 354, "event": "draw", "phase": "normal", "player": 3, "player_turn": 15, "deck_remaining": 9, "card": "Astro-Billy", "card_id": 12, "source": "normal_draw"}
+{"event_number": 355, "event": "play", "phase": "normal", "player": 3, "player_turn": 15, "deck_remaining": 9, "card": "Astro-Billy", "card_id": 12, "waited_own_turns": 0}
+{"event_number": 356, "event": "goat_added", "phase": "normal", "player": 3, "player_turn": 15, "deck_remaining": 9, "card": "Astro-Billy", "card_id": 12, "goats": 13}
+{"event_number": 357, "event": "turn_end", "phase": "normal", "player": 3, "player_turn": 15, "deck_remaining": 9, "goats": 13, "hand_cards": 3}
+{"event_number": 358, "event": "turn_start", "phase": "normal", "player": 4, "player_turn": 15, "deck_remaining": 9}
+{"event_number": 359, "event": "draw", "phase": "normal", "player": 4, "player_turn": 15, "deck_remaining": 8, "card": "Tractor Beam", "card_id": 57, "source": "normal_draw"}
+{"event_number": 360, "event": "play", "phase": "normal", "player": 4, "player_turn": 15, "deck_remaining": 8, "card": "Astro-Billy", "card_id": 3, "waited_own_turns": 2}
+{"event_number": 361, "event": "goat_added", "phase": "normal", "player": 4, "player_turn": 15, "deck_remaining": 8, "card": "Astro-Billy", "card_id": 3, "goats": 9}
+{"event_number": 362, "event": "turn_end", "phase": "normal", "player": 4, "player_turn": 15, "deck_remaining": 8, "goats": 9, "hand_cards": 3}
+{"event_number": 363, "event": "turn_start", "phase": "normal", "player": 1, "player_turn": 16, "deck_remaining": 8}
+{"event_number": 364, "event": "draw", "phase": "normal", "player": 1, "player_turn": 16, "deck_remaining": 7, "card": "Tin-Foil Space Helmet", "card_id": 84, "source": "alfalfa"}
+{"event_number": 365, "event": "draw", "phase": "normal", "player": 1, "player_turn": 16, "deck_remaining": 6, "card": "Twin Kids", "card_id": 26, "source": "normal_draw"}
+{"event_number": 366, "event": "play", "phase": "normal", "player": 1, "player_turn": 16, "deck_remaining": 6, "card": "Twin Kids", "card_id": 26, "waited_own_turns": 0}
+{"event_number": 367, "event": "goat_added", "phase": "normal", "player": 1, "player_turn": 16, "deck_remaining": 6, "card": "Twin Kids", "card_id": 26, "goats": 10}
+{"event_number": 368, "event": "discard", "phase": "normal", "player": 1, "player_turn": 16, "deck_remaining": 6, "card": "Tin-Foil Space Helmet", "card_id": 84, "waited_own_turns": 0}
+{"event_number": 369, "event": "turn_end", "phase": "normal", "player": 1, "player_turn": 16, "deck_remaining": 6, "goats": 10, "hand_cards": 3}
+{"event_number": 370, "event": "turn_start", "phase": "normal", "player": 2, "player_turn": 16, "deck_remaining": 6}
+{"event_number": 371, "event": "draw", "phase": "normal", "player": 2, "player_turn": 16, "deck_remaining": 5, "card": "The G.O.A.T.", "card_id": 28, "source": "normal_draw"}
+{"event_number": 372, "event": "play", "phase": "normal", "player": 2, "player_turn": 16, "deck_remaining": 5, "card": "The G.O.A.T.", "card_id": 28, "waited_own_turns": 0}
+{"event_number": 373, "event": "goat_added", "phase": "normal", "player": 2, "player_turn": 16, "deck_remaining": 5, "card": "The G.O.A.T.", "card_id": 28, "goats": 21}
+{"event_number": 374, "event": "turn_end", "phase": "normal", "player": 2, "player_turn": 16, "deck_remaining": 5, "goats": 21, "hand_cards": 2}
+{"event_number": 375, "event": "turn_start", "phase": "normal", "player": 3, "player_turn": 16, "deck_remaining": 5}
+{"event_number": 376, "event": "draw", "phase": "normal", "player": 3, "player_turn": 16, "deck_remaining": 4, "card": "Laser Blast", "card_id": 53, "source": "normal_draw"}
+{"event_number": 377, "event": "draw", "phase": "normal", "player": 3, "player_turn": 16, "deck_remaining": 3, "card": "Cardboard Forcefield", "card_id": 79, "source": "extra_draw"}
+{"event_number": 378, "event": "discard", "phase": "normal", "player": 3, "player_turn": 16, "deck_remaining": 3, "card": "Tractor Beam", "card_id": 56, "waited_own_turns": 3}
+{"event_number": 379, "event": "discard", "phase": "normal", "player": 3, "player_turn": 16, "deck_remaining": 3, "card": "Laser Blast", "card_id": 53, "waited_own_turns": 0}
+{"event_number": 380, "event": "turn_end", "phase": "normal", "player": 3, "player_turn": 16, "deck_remaining": 3, "goats": 13, "hand_cards": 3}
+{"event_number": 381, "event": "turn_start", "phase": "normal", "player": 4, "player_turn": 16, "deck_remaining": 3}
+{"event_number": 382, "event": "draw", "phase": "normal", "player": 4, "player_turn": 16, "deck_remaining": 2, "card": "Quarantine Zone", "card_id": 102, "source": "normal_draw"}
+{"event_number": 383, "event": "play", "phase": "normal", "player": 4, "player_turn": 16, "deck_remaining": 2, "card": "Quarantine Zone", "card_id": 102, "waited_own_turns": 0}
+{"event_number": 384, "event": "block", "phase": "normal", "player": 2, "player_turn": 16, "deck_remaining": 2, "card": "Tin-Foil Space Helmet", "card_id": 87, "waited_own_turns": 4}
+{"event_number": 385, "event": "blocked", "phase": "normal", "player": 4, "player_turn": 16, "deck_remaining": 2, "card": "Quarantine Zone", "card_id": 102, "by_player": 2, "block_card": "Tin-Foil Space Helmet", "target_player": 2}
+{"event_number": 386, "event": "turn_end", "phase": "normal", "player": 4, "player_turn": 16, "deck_remaining": 2, "goats": 9, "hand_cards": 3}
+{"event_number": 387, "event": "turn_start", "phase": "normal", "player": 1, "player_turn": 17, "deck_remaining": 2}
+{"event_number": 388, "event": "draw", "phase": "normal", "player": 1, "player_turn": 17, "deck_remaining": 1, "card": "Tractor Beam", "card_id": 54, "source": "alfalfa"}
+{"event_number": 389, "event": "draw", "phase": "normal", "player": 1, "player_turn": 17, "deck_remaining": 0, "card": "Twin Kids", "card_id": 25, "source": "normal_draw"}
+{"event_number": 390, "event": "deck_exhausted", "phase": "normal", "player": 1, "player_turn": 17, "deck_remaining": 0, "card": "Twin Kids", "card_id": 25}
+{"event_number": 391, "event": "final_orbit_start", "phase": "final_orbit", "player": 1, "player_turn": 17, "deck_remaining": 0}
+{"event_number": 392, "event": "turn_start", "phase": "final_orbit", "player": 1, "player_turn": 17, "deck_remaining": 0}
+{"event_number": 393, "event": "play", "phase": "final_orbit", "player": 1, "player_turn": 17, "deck_remaining": 0, "card": "Tractor Beam", "card_id": 54, "waited_own_turns": 0}
+{"event_number": 394, "event": "steal", "phase": "final_orbit", "player": 1, "player_turn": 17, "deck_remaining": 0, "card": "Tractor Beam", "card_id": 54, "target_player": 2, "affected_card": "The G.O.A.T.", "affected_card_id": 28, "goat_value": 3}
+{"event_number": 395, "event": "play", "phase": "final_orbit", "player": 1, "player_turn": 17, "deck_remaining": 0, "card": "Twin Kids", "card_id": 25, "waited_own_turns": 0}
+{"event_number": 396, "event": "goat_added", "phase": "final_orbit", "player": 1, "player_turn": 17, "deck_remaining": 0, "card": "Twin Kids", "card_id": 25, "goats": 15}
+{"event_number": 397, "event": "turn_end", "phase": "final_orbit", "player": 1, "player_turn": 17, "deck_remaining": 0, "goats": 15, "hand_cards": 3}
+{"event_number": 398, "event": "turn_start", "phase": "final_orbit", "player": 2, "player_turn": 17, "deck_remaining": 0}
+{"event_number": 399, "event": "pass", "phase": "final_orbit", "player": 2, "player_turn": 17, "deck_remaining": 0}
+{"event_number": 400, "event": "turn_end", "phase": "final_orbit", "player": 2, "player_turn": 17, "deck_remaining": 0, "goats": 18, "hand_cards": 1}
+{"event_number": 401, "event": "turn_start", "phase": "final_orbit", "player": 3, "player_turn": 17, "deck_remaining": 0}
+{"event_number": 402, "event": "pass", "phase": "final_orbit", "player": 3, "player_turn": 17, "deck_remaining": 0}
+{"event_number": 403, "event": "turn_end", "phase": "final_orbit", "player": 3, "player_turn": 17, "deck_remaining": 0, "goats": 13, "hand_cards": 3}
+{"event_number": 404, "event": "turn_start", "phase": "final_orbit", "player": 4, "player_turn": 17, "deck_remaining": 0}
+{"event_number": 405, "event": "pass", "phase": "final_orbit", "player": 4, "player_turn": 17, "deck_remaining": 0}
+{"event_number": 406, "event": "turn_end", "phase": "final_orbit", "player": 4, "player_turn": 17, "deck_remaining": 0, "goats": 9, "hand_cards": 3}
+{"event_number": 407, "event": "game_end", "phase": "finished", "player": null, "player_turn": null, "deck_remaining": 0, "winners": [2], "scores": [15, 18, 13, 9], "hand_sizes": [3, 1, 3, 3]}

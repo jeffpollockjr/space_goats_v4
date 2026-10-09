@@ -1,0 +1,10 @@
+{
+  "starting_hand_size": 5,
+  "normal_hand_limit": 5,
+  "chewed_hand_limit": 3,
+  "allow_duplicate_specials": false,
+  "quarantine_scope": "all_additions",
+  "nanny_triggers_during_deal": true,
+  "removal_choice": "victim",
+  "final_orbit_cards": 2
+}

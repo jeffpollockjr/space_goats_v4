@@ -1,0 +1,45 @@
+SPACE GOATS V4 - SIMULATION REPORT
+============================================================
+Games: 1,000 | Players: 4 | Deck: 104 cards
+Master seed: 42 | Runtime: 1.972s
+Shared-winner games: 28
+
+PLAYER RESULTS (goats = summed Goat Count; turns include Final Orbit)
+Player    Win %  Solo wins  Shared  Avg turns  Turn range  Avg goats  Goats if won
+--------  -----  ---------  ------  ---------  ----------  ---------  ------------
+Player 1  23.35  225        17      15.57      11-19       10.64      15.83       
+Player 2  24.15  234        15      15.55      11-20       10.78      14.68       
+Player 3  24.70  242        10      15.59      10-20       10.79      15.21       
+Player 4  27.80  271        14      15.59      10-20       10.96      15.21       
+
+MOST QUICKLY USED (played within 0-2 owner turns / acquired)
+Card                 Quick %  Quick plays  All plays  Avg wait
+-------------------  -------  -----------  ---------  --------
+Quarantine Zone      89.75    3590         3774       0.57    
+Space Sickness       82.05    3282         3528       0.73    
+Hyper-Jumping Nanny  75.18    3759         3858       0.18    
+Hydroponic Alfalfa   73.38    2935         2967       0.44    
+The G.O.A.T.         67.20    5376         6746       1.44    
+Space Wrench         63.37    3802         4975       1.63    
+Chewed Wiring        62.08    2483         3159       1.39    
+Tractor Beam         51.42    4114         4577       0.86    
+
+LEAST USED (never played OR played 10+ owner turns later / acquired)
+Card                   Slow/never %  Never played  Played 10+  Held 10+ %
+---------------------  ------------  ------------  ----------  ----------
+Cardboard Forcefield   79.68         4674          107         10.05     
+Goat-Yoga Focus        78.48         3878          46          8.68      
+Orbital Vacuum         65.70         2568          60          4.30      
+Astro-Billy            58.12         7534          1184        14.29     
+Airlock Malfunction    55.79         4174          289         7.39      
+Laser Blast            55.55         3116          217         7.28      
+Tin-Foil Space Helmet  46.28         2275          39          1.50      
+Tractor Beam           42.91         3423          10          0.59      
+
+Reading these results:
+- All seats use the same AI; starting players rotate. Win rates use shared win credits.
+- Nanny auto-placements count as plays; reaction Blocks and blocked attempts also count.
+- 'Never played' includes forced discards and cards left in hand; these have separate CSV columns.
+- Quick rates include same-turn plays; exact next-turn/turn-after rates are also in card_usage.csv.
+- Late draws have fewer opportunities. These rates describe this AI, not optimal human play.
+- CSVs contain all card names, per-game scores, turn counts, and additional metrics.

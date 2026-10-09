@@ -1,0 +1,5 @@
+﻿player,games,outright_wins,shared_wins,win_credit,win_rate_pct,win_rate_mc_standard_error_pct,avg_turns,median_turns,min_turns,max_turns,p10_turns,p90_turns,avg_normal_turns,avg_final_turns,avg_goats,median_goats,min_goats,max_goats,total_goats,avg_goats_when_winner,avg_goat_cards,avg_ending_hand_cards,games_started,final_orbits_started
+Player 1,1000,225,17,233.5,23.35,1.3225,15.571,16.0,11,19,14.0,18.0,14.571,1,10.641,11.0,0,23,10641,15.8264,5.878,2.944,250,273
+Player 2,1000,234,15,241.5,24.15,1.3402,15.553,16.0,11,20,14.0,18.0,14.553,1,10.784,11.0,0,24,10784,14.6827,6.003,2.852,250,268
+Player 3,1000,242,10,247.0,24.7,1.3553,15.589,16.0,10,20,14.0,18.0,14.589,1,10.793,11.0,0,25,10793,15.2103,5.97,2.898,250,214
+Player 4,1000,271,14,278.0,27.8,1.405,15.594,16.0,10,20,14.0,18.0,14.594,1,10.964,12.0,0,26,10964,15.207,6.064,2.803,250,245
