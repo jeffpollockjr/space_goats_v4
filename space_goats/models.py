@@ -18,6 +18,7 @@ KNOWN_CARDS = {
     "Cardboard Forcefield": ("Block", "block_remove_goat"),
     "Tin-Foil Space Helmet": ("Block", "block_modifier"),
     "Hydroponic Alfalfa": ("Special", "alfalfa"),
+    "Double Trouble": ("Special", "double_trouble"),
     "Chewed Wiring": ("Special", "wiring"),
     "Space Sickness": ("Special", "sickness"),
     "Quarantine Zone": ("Special", "quarantine"),
@@ -41,9 +42,6 @@ class Rules:
     normal_hand_limit: int = 5
     chewed_hand_limit: int = 3
     allow_duplicate_specials: bool = False
-    quarantine_scope: str = "all_additions"
-    nanny_triggers_during_deal: bool = True
-    removal_choice: str = "victim"
     final_orbit_cards: int = 2
 
     @classmethod
@@ -62,13 +60,9 @@ class Rules:
                 raise ValueError(f"Rule {name} must be a nonnegative integer.")
         if self.final_orbit_cards < 1:
             raise ValueError("final_orbit_cards must be at least 1.")
-        for name in ("allow_duplicate_specials", "nanny_triggers_during_deal"):
+        for name in ("allow_duplicate_specials",):
             if type(getattr(self, name)) is not bool:
                 raise ValueError(f"Rule {name} must be true or false.")
-        if self.quarantine_scope not in ("all_additions", "hand_play_only"):
-            raise ValueError("quarantine_scope must be all_additions or hand_play_only.")
-        if self.removal_choice not in ("victim", "attacker"):
-            raise ValueError("removal_choice must be victim or attacker.")
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)

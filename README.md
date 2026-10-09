@@ -78,7 +78,7 @@ rankings; runtime changes.
 | `player_summary.csv` | Each player's win rate, wins, average/range of turns, goats, and starter counts |
 | `game_player_results.csv` | One row per player per game: exact turns, goats, remaining hand, and win credit |
 | `game_results.csv` | One row per game: replay seed, starting players, winner(s), winning goats, and total turns |
-| `card_usage.csv` | All 16 card names: play rates, holding-time buckets, Blocks, auto-plays, and unused outcomes |
+| `card_usage.csv` | All 17 card names: play rates, holding-time buckets, Blocks, auto-plays, and unused outcomes |
 | `most_used_cards.csv` | All cards sorted by percentage played within 0–2 of their owner's turns |
 | `least_used_cards.csv` | All cards sorted by percentage never played or played 10+ owner turns later |
 | `logs/game_0001.txt` | First game's readable event history, including draws, plays, Blocks, effects, and scores |
@@ -129,7 +129,8 @@ and cards remaining in hand when the game finishes. `held_10_plus_pct`
 separately measures cards actually held for 10+ turns, so you can distinguish
 long holding from an early forced discard.
 
-Automatic Hyper-Jumping Nanny placement and reaction Blocks count as use.
+Automatic Hyper-Jumping Nanny placements outside setup and reaction Blocks
+count as use; setup-dealt Nannies are regular Goat cards in hand.
 A blocked Action/Special also counts as used because the player spent the
 card. `resolved_plays` and `blocked_plays` separate successful resolution from
 blocked attempts. Stealing or scooping an already deployed goat does not
@@ -164,12 +165,13 @@ The supplied spec does not define initial hands, duplicate modifiers, or
 unresolved ties. Some CSV descriptions are broader than the spec. Defaults
 are documented in detail in [docs/rules_and_assumptions.md](docs/rules_and_assumptions.md):
 
-- Deal five hand cards to each player, with no starting goats except drawn Nannies.
-- Resolve Nannies during every draw, including setup, Alfalfa, and extra draws.
-- Quarantine stops every addition of goats, including steals, vacuum, and Nannies.
-  A drawn quarantined Nanny stays in hand and still triggers its bonus draw.
-- The victim chooses the goat ejected/destroyed, keeping the most valuable goat.
-  The thief chooses which goat to steal.
+- Deal five cards to each player; a dealt Nanny is a regular hand goat.
+- Resolve Nannies outside setup unless Quarantine blocks the entire effect.
+- Quarantine prevents Goat card plays from hand, but not steals or scoops; it
+  blocks the Nanny effect.
+- The target player chooses the goat affected by eject, destroy, or steal; AI
+  players choose the lowest goat-count card.
+- Double Trouble grants a second play slot during normal action phases.
 - Identical Special cards cannot stack on one ship by default.
 - Chewed Wiring's reduced limit lasts while attached; Space Wrench restores it.
 - Blocks follow the exact restrictions in the coding spec and cannot counter Blocks.
@@ -181,10 +183,7 @@ Edit `rules.json` to compare rule variants. For example:
 | Setting | Default | Alternative |
 | --- | --- | --- |
 | `starting_hand_size` | `5` | Another nonnegative integer |
-| `quarantine_scope` | `"all_additions"` | `"hand_play_only"` follows the narrower spec restriction |
-| `removal_choice` | `"victim"` | `"attacker"` makes eject/destroy select the highest-value goat |
 | `allow_duplicate_specials` | `false` | `true` allows duplicates; Alfalfa copies each add a draw |
-| `nanny_triggers_during_deal` | `true` | `false` leaves dealt Nannies in hand |
 | `normal_hand_limit` | `5` | Another nonnegative integer |
 | `chewed_hand_limit` | `3` | Another nonnegative integer |
 | `final_orbit_cards` | `2` | Another positive integer |
@@ -196,7 +195,7 @@ the AI consumes, so later plays are not matched card-for-card across variants.
 
 ## Change the deck
 
-`data/deck.csv` is the supplied deck with all 104 rows preserved. **Each row is
+`data/deck.csv` contains 104 physical cards. **Each row is
 one physical card**, so duplicate or remove rows to change copy counts. Keep
 the column headers and CSV quoting intact.
 

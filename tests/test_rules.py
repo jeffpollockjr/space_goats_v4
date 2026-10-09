@@ -9,18 +9,24 @@ from tests.helpers import CARDS, game, put, tiny_game
 class SetupAndDrawTests(unittest.TestCase):
     def test_original_deck(self):
         self.assertEqual(len(CARDS), 104)
-        self.assertEqual(len({card.name for card in CARDS}), 16)
+        self.assertEqual(len({card.name for card in CARDS}), 17)
         self.assertEqual(sum(card.goat_count for card in CARDS), 68)
+        self.assertEqual(sum(card.name == "Quarantine Zone" for card in CARDS), 3)
+        self.assertEqual(sum(card.name == "Space Sickness" for card in CARDS), 3)
+        self.assertEqual(sum(card.name == "Double Trouble" for card in CARDS), 2)
 
-    def test_setup_deals_five_hand_cards_and_resolves_nannies(self):
+    def test_setup_deals_five_cards_and_nannies_are_regular_hand_goats(self):
         g = game(players=5, rules=Rules())
         g.deal()
         self.assertEqual([len(p.hand) for p in g.players], [5] * 5)
-        self.assertTrue(all(card.effect_id == "nanny" for p in g.players for card in p.goats))
+        self.assertEqual([len(p.goats) for p in g.players], [0] * 5)
+        dealt_nannies = [card for p in g.players for card in p.hand if card.effect_id == "nanny"]
+        self.assertTrue(all(not g.acquisitions[card.uid].auto_play for card in dealt_nannies))
         g.assert_invariants()
 
     def test_nanny_chain_is_automatic_and_replaces_draw(self):
         g = tiny_game(["Astro-Billy", "Hyper-Jumping Nanny", "Hyper-Jumping Nanny"])
+        g.phase = "normal"
         g.deck.sort(key=lambda card: card.effect_id == "nanny")
         g.draw(g.players[0])
         self.assertEqual(len(g.players[0].goats), 2)
@@ -31,21 +37,27 @@ class SetupAndDrawTests(unittest.TestCase):
 
     def test_last_card_nanny_is_placed_without_bonus_draw(self):
         g = tiny_game(["Hyper-Jumping Nanny"])
+        g.phase = "normal"
         g.draw(g.players[0])
         self.assertEqual(g.players[0].goat_total, 1)
         self.assertEqual(g.final_start_seat, 0)
         self.assertEqual(g.deck, [])
 
-    def test_nanny_during_deal_can_be_disabled(self):
-        g = tiny_game(["Hyper-Jumping Nanny", "Astro-Billy"],
-                      rules=Rules(starting_hand_size=0, nanny_triggers_during_deal=False))
+    def test_setup_nanny_is_dealt_as_a_regular_hand_goat(self):
+        g = tiny_game(["Hyper-Jumping Nanny", "Astro-Billy"])
         g.deck.sort(key=lambda c: c.effect_id == "nanny")
         g.draw(g.players[0], "deal")
         self.assertEqual(len(g.players[0].hand), 1)
         self.assertEqual(len(g.players[0].goats), 0)
         self.assertEqual(len(g.deck), 1)
+        g.phase = "normal"
+        nanny = g.players[0].hand[0]
+        self.assertIn(Move(nanny, 0), g.legal_moves(g.players[0]))
+        g.play(g.players[0], Move(nanny, 0))
+        self.assertEqual(g.players[0].goats, [nanny])
+        self.assertEqual(len(g.deck), 1)
 
-    def test_quarantined_nanny_stays_in_hand_but_draws_bonus(self):
+    def test_quarantine_blocks_nanny_effect_and_bonus_draw(self):
         g = game()
         put(g, "Quarantine Zone", zone="specials")
         nanny = next(card for card in g.deck if card.effect_id == "nanny")
@@ -53,8 +65,10 @@ class SetupAndDrawTests(unittest.TestCase):
         g.deck.remove(nanny)
         g.deck.remove(ordinary)
         g.deck.extend([ordinary, nanny])
+        g.phase = "normal"
         g.draw(g.players[0])
-        self.assertEqual(g.players[0].hand, [nanny, ordinary])
+        self.assertEqual(g.players[0].hand, [nanny])
+        self.assertIn(ordinary, g.deck)
         self.assertFalse(g.acquisitions[nanny.uid].auto_play)
         self.assertEqual(len(g.players[0].goats), 0)
         g.assert_invariants()
@@ -68,30 +82,32 @@ class ActionTests(unittest.TestCase):
         self.assertEqual(g.players[0].goat_total, 2)
         self.assertEqual(len(g.players[0].goats), 1)
 
-    def test_eject_goes_to_orbit_and_victim_chooses_lowest(self):
+    def test_eject_victim_chooses_lowest_goat_and_it_goes_to_orbit(self):
         g = game()
         low = put(g, "Astro-Billy", 1, "goats")
         high = put(g, "The G.O.A.T.", 1, "goats")
         action = put(g, "Airlock Malfunction")
         move = g.legal_moves(g.players[0])[0]
-        self.assertEqual(move.target_card_uid, low.uid)
+        self.assertIsNone(move.target_card_uid)
         g.play(g.players[0], move)
         self.assertEqual(g.orbital, [low])
         self.assertEqual(g.players[1].goats, [high])
         self.assertIn(action, g.discard)
 
-    def test_attacker_choice_variant_removes_highest(self):
-        g = game(rules=Rules(starting_hand_size=0, removal_choice="attacker"))
-        put(g, "Astro-Billy", 1, "goats")
-        high = put(g, "The G.O.A.T.", 1, "goats")
-        put(g, "Airlock Malfunction")
-        self.assertEqual(g.legal_moves(g.players[0])[0].target_card_uid, high.uid)
+    def test_victim_also_chooses_which_goat_is_stolen(self):
+        g = game()
+        low = put(g, "Astro-Billy", 1, "goats")
+        put(g, "The G.O.A.T.", 1, "goats")
+        put(g, "Tractor Beam")
+        move = g.legal_moves(g.players[0])[0]
+        g.play(g.players[0], move)
+        self.assertIn(low, g.players[0].goats)
 
     def test_destroy_does_not_eject(self):
         g = game()
         goat = put(g, "Twin Kids", 1, "goats")
         action = put(g, "Laser Blast")
-        g.play(g.players[0], Move(action, 1, goat.uid))
+        g.play(g.players[0], Move(action, 1))
         self.assertIn(goat, g.discard)
         self.assertEqual(g.orbital, [])
         self.assertEqual(g.players[1].goats, [])
@@ -101,7 +117,7 @@ class ActionTests(unittest.TestCase):
         goat = put(g, "The G.O.A.T.", 1, "goats")
         action = put(g, "Tractor Beam")
         old_count = len(g.acquisitions)
-        g.play(g.players[0], Move(action, 1, goat.uid))
+        g.play(g.players[0], Move(action, 1))
         self.assertIn(goat, g.players[0].goats)
         self.assertEqual(g.players[1].goats, [])
         self.assertEqual(g.acquisitions[goat.uid].player_seat, 1)
@@ -176,7 +192,7 @@ class ModifierTests(unittest.TestCase):
         self.assertFalse(any(m.card.effect_id == "remove_modifier" and m.target_card_uid == other_bad.uid for m in moves))
         self.assertTrue(any(m.card.card_type == "Special" and m.target_seat == 1 for m in moves))
 
-    def test_quarantine_blocks_hand_play_steal_and_scoop(self):
+    def test_quarantine_blocks_hand_play_but_allows_steal_and_scoop(self):
         g = game()
         put(g, "Quarantine Zone", zone="specials")
         put(g, "Twin Kids", 1, "goats")
@@ -186,17 +202,16 @@ class ModifierTests(unittest.TestCase):
         for name in ("Astro-Billy", "Tractor Beam", "Orbital Vacuum", "Laser Blast"):
             put(g, name)
         moves = g.legal_moves(g.players[0])
-        self.assertTrue(moves)
-        self.assertTrue(all(m.card.effect_id == "destroy" for m in moves))
-
-    def test_spec_only_quarantine_variant_allows_steal(self):
-        g = game(rules=Rules(starting_hand_size=0, quarantine_scope="hand_play_only"))
-        put(g, "Quarantine Zone", zone="specials")
-        put(g, "Twin Kids", 1, "goats")
-        put(g, "Tractor Beam")
-        put(g, "Astro-Billy")
-        moves = g.legal_moves(g.players[0])
+        self.assertFalse(any(m.card.card_type == "Goat" for m in moves))
         self.assertTrue(any(m.card.effect_id == "steal" for m in moves))
+        self.assertTrue(any(m.card.effect_id == "scoop" for m in moves))
+        self.assertTrue(any(m.card.effect_id == "destroy" for m in moves))
+
+    def test_quarantined_nanny_goat_cannot_be_played_from_hand(self):
+        g = game()
+        put(g, "Quarantine Zone", zone="specials")
+        put(g, "Hyper-Jumping Nanny")
+        moves = g.legal_moves(g.players[0])
         self.assertFalse(any(m.card.card_type == "Goat" for m in moves))
 
     def test_identical_specials_do_not_stack_by_default(self):
@@ -215,13 +230,33 @@ class ModifierTests(unittest.TestCase):
         g.normal_turn(g.players[0])
         self.assertEqual(sum(e["event"] == "draw" and e.get("source") == "alfalfa" for e in g.events), 2)
 
+    def test_double_trouble_grants_two_normal_action_plays(self):
+        g = game()
+        put(g, "Double Trouble", zone="specials")
+        first = put(g, "Astro-Billy")
+        second = put(g, "Twin Kids")
+        g.phase = "normal"
+        g.draw = lambda player, source="normal_draw": None
+        g.ai.choose_move = lambda context, moves: next(
+            (move for move in moves if move.card.card_type == "Goat"), None)
+        g.normal_turn(g.players[0])
+        self.assertIn(first, g.players[0].goats)
+        self.assertIn(second, g.players[0].goats)
+        self.assertEqual(sum(event["event"] == "play" for event in g.events), 2)
+
+    def test_double_trouble_can_attach_to_any_spaceship(self):
+        g = game()
+        card = put(g, "Double Trouble")
+        moves = g.legal_moves(g.players[0])
+        self.assertEqual([move.target_seat for move in moves if move.card == card], [0, 1])
+
 
 class BlockTests(unittest.TestCase):
     def test_each_block_has_only_its_documented_valid_targets(self):
         expected = {
             "Goat-Yoga Focus": {"Tractor Beam"},
             "Cardboard Forcefield": {"Airlock Malfunction", "Laser Blast"},
-            "Tin-Foil Space Helmet": {"Space Wrench", "Hydroponic Alfalfa", "Chewed Wiring", "Space Sickness", "Quarantine Zone"},
+            "Tin-Foil Space Helmet": {"Space Wrench", "Hydroponic Alfalfa", "Double Trouble", "Chewed Wiring", "Space Sickness", "Quarantine Zone"},
         }
         by_name = {c.name: c for c in CARDS}
         for block_name, valid in expected.items():
@@ -238,7 +273,7 @@ class BlockTests(unittest.TestCase):
                 goat = put(g, "Twin Kids", 1, "goats")
                 action = put(g, action_name)
                 block = put(g, block_name, 1)
-                g.play(g.players[0], Move(action, 1, goat.uid))
+                g.play(g.players[0], Move(action, 1))
                 self.assertIn(goat, g.players[1].goats)
                 self.assertIn(action, g.discard)
                 self.assertIn(block, g.discard)
@@ -267,7 +302,7 @@ class BlockTests(unittest.TestCase):
         goat = put(g, "Twin Kids", 1, "goats")
         action = put(g, "Laser Blast")
         block = put(g, "Goat-Yoga Focus", 1)
-        g.play(g.players[0], Move(action, 1, goat.uid))
+        g.play(g.players[0], Move(action, 1))
         self.assertIn(goat, g.discard)
         self.assertIn(block, g.players[1].hand)
 
@@ -276,7 +311,7 @@ class BlockTests(unittest.TestCase):
         goat = put(g, "Twin Kids", 1, "goats")
         action = put(g, "Tractor Beam")
         put(g, "Goat-Yoga Focus", 1)
-        g.play(g.players[0], Move(action, 1, goat.uid))
+        g.play(g.players[0], Move(action, 1))
         self.assertEqual(g.players[1].turns, 0)
         self.assertEqual(g.players[1].normal_turns, 0)
 
@@ -386,7 +421,7 @@ class WholeGameTests(unittest.TestCase):
 
     def test_rules_validation(self):
         for data in ({"unknown": 1}, {"normal_hand_limit": -1}, {"allow_duplicate_specials": "yes"},
-                     {"quarantine_scope": "none"}, {"removal_choice": "random"}, {"final_orbit_cards": 0}):
+                     {"final_orbit_cards": 0}):
             with self.subTest(data=data), self.assertRaises(ValueError):
                 Rules.from_dict(data)
 

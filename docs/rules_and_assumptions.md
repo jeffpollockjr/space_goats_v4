@@ -9,23 +9,26 @@ from any other card game.
 
 The missing setup rule is filled in with five starting hand cards per player.
 Shuffle the full deck once. Deal one card per player clockwise, starting with
-the starting player, for five rounds. A setup Nanny auto-deploys and its draw
-chain supplies the hand card for that deal slot. This can give a player one or
-more goats before their first turn. No other starting goats are supplied.
-The starting player rotates between simulations.
+the starting player, for five rounds. A Hyper-Jumping Nanny dealt during setup
+is an ordinary one-goat card in hand; it does not auto-deploy or draw a
+replacement. No starting goats are supplied. The starting player rotates
+between simulations.
 
 ## Normal turn
 
 1. Draw one card for each attached Hydroponic Alfalfa.
 2. Draw one normal card, resolving any Nanny chain.
-3. Play one legal card, or take one extra draw instead.
+3. Play one legal card, or take one extra draw instead. With Double Trouble,
+   play up to two legal cards; the extra draw is available only if no legal
+   first play is made.
 4. Discard to five hand cards, or three with Chewed Wiring.
 
 If any draw exhausts the deck, the remaining normal phases stop immediately.
 The current turn changes to Final Orbit and is counted once. No discard
-occurs at this transition. If the final card is a Nanny, that card's automatic
-placement (or quarantined hand placement) completes as part of the draw, then
-the transition begins; there is no attempt to draw its nonexistent bonus.
+occurs at this transition. If the final card is a Nanny outside setup, its
+automatic placement (or Quarantine-blocked hand placement) completes as part
+of the draw, then the transition begins; there is no attempt to draw a
+nonexistent bonus card.
 
 ## Cards
 
@@ -34,10 +37,10 @@ the transition begins; there is no attempt to draw its nonexistent bonus.
 | Astro-Billy | 15 | Play to your ship; worth 1 goat |
 | Twin Kids | 12 | Play to your ship; worth 2 goats |
 | The G.O.A.T. | 8 | Play to your ship; worth 3 goats |
-| Hyper-Jumping Nanny | 5 | Draw-triggered automatic placement worth 1; draw another card, recursively |
+| Hyper-Jumping Nanny | 5 | When drawn outside setup and not blocked by Quarantine, place automatically for 1 and draw again |
 | Airlock Malfunction | 8 | Opponent ejects one goat card to orbit |
 | Laser Blast | 6 | Opponent destroys one goat card to discard |
-| Tractor Beam | 8 | Choose and steal one opponent goat card |
+| Tractor Beam | 8 | Targeted player chooses one goat card to transfer to the attacker |
 | Orbital Vacuum | 4 | Move all orbit goat cards to your ship |
 | Space Wrench | 6 | Remove one attached Special from any ship |
 | Goat-Yoga Focus | 5 | Reaction that blocks Tractor Beam only |
@@ -45,26 +48,24 @@ the transition begins; there is no attempt to draw its nonexistent bonus.
 | Tin-Foil Space Helmet | 5 | Reaction that blocks an attached Special play or Space Wrench |
 | Hydroponic Alfalfa | 4 | Attached upgrade; extra draw at start of normal turn |
 | Chewed Wiring | 4 | Attached downgrade; hand limit 3 while attached |
-| Space Sickness | 4 | Attached downgrade; cannot use Actions against other players |
-| Quarantine Zone | 4 | Attached downgrade; cannot add goats to your ship |
+| Space Sickness | 3 | Attached downgrade; cannot use Actions against other players |
+| Quarantine Zone | 3 | Attached downgrade; cannot play Goat cards from hand |
+| Double Trouble | 2 | Attached upgrade; owner may play up to two cards during a normal action phase |
 
-For Airlock/Laser, the CSV says the **target opponent** ejects/destroys a goat.
-The default assumption lets that victim choose and retain their most valuable
-cards. `removal_choice: "attacker"` changes this to the attacker choosing the
-highest-value card. A Tractor Beam actor chooses any legal goat to steal.
+For Airlock/Laser/Tractor Beam, the targeted player chooses which goat is
+affected. The simulation's AI chooses the lowest goat-count card, retaining
+the more valuable cards when possible.
 An empty orbital area or target without a required card makes an Action
 illegal; the AI cannot spend it on a nonexistent target.
 
 ## Ambiguities resolved
 
-**Quarantine:** the coding spec mentions hand-play restrictions; the CSV says
-the player cannot add any more Goat cards. The default uses the broader CSV
-meaning: no hand deployment, stealing, scooping, or automatic Nanny entry.
-A drawn quarantined Nanny stays in hand and still grants its replacement
-draw. It can be played later as a normal one-goat card after Quarantine is
-removed, without another draw trigger. `quarantine_scope: "hand_play_only"`
-lets steal/scoop/automatic Nannies bypass Quarantine, matching the narrower
-coding-spec check. An opponent may still remove a quarantined ship's goats.
+**Quarantine:** a quarantined player cannot play Goat cards from hand, but
+may still acquire goats through Tractor Beam or Orbital Vacuum. Quarantine
+blocks the entire Hyper-Jumping Nanny effect: a Nanny drawn while quarantined
+stays in hand and does not grant a bonus draw. A Nanny dealt during setup is
+also an ordinary hand card. An opponent may still remove a quarantined ship's
+goats.
 
 **Chewed Wiring:** "permanently" is interpreted as while the Special remains
 attached. Otherwise Space Wrench's removal would not restore the limit. Hand
@@ -92,9 +93,15 @@ The actor cannot block its own card. Blocks are not Actions/Specials and
 cannot be counter-blocked; multiple Blocks are unnecessary once canceled.
 Off-turn reactions do not consume a turn or its action allowance.
 
-**Nannies:** draw triggers apply to normal draws, Alfalfa, extra draws, setup
-draws, and recursive Nanny draws. They are automatic rather than blockable
-Action/Special plays. Disable setup triggers with the provided rule setting.
+**Nannies:** outside setup and Quarantine, draw triggers apply to normal
+draws, Alfalfa, extra draws, and recursive Nanny draws. They are automatic
+rather than blockable Action/Special plays. Setup-dealt Nannies are regular
+hand goats and do not trigger.
+
+**Double Trouble:** this upgrade is attached to its owner's ship. At the start
+of a normal action phase, an attached Double Trouble grants a second card play
+slot. Final Orbit already permits two card plays, so the upgrade does not add
+another slot there.
 
 ## Final Orbit and winner
 

@@ -62,7 +62,7 @@ class Game:
     def can_add_goat(self, player: Player, from_hand: bool = False) -> bool:
         if not player.has("quarantine"):
             return True
-        return not from_hand and self.rules.quarantine_scope == "hand_play_only"
+        return not from_hand
 
     def draw(self, player: Player, source: str = "normal_draw") -> None:
         """Resolve an entire nanny chain, stopping at the exact final deck pop.
@@ -76,10 +76,9 @@ class Game:
             observation = Acquisition(card, player.seat, player.turns, next_source)
             self.acquisitions[card.uid] = observation
             self.event("draw", player.seat, card, source=next_source)
-            is_nanny = card.effect_id == "nanny" and (
-                self.phase != "setup" or self.rules.nanny_triggers_during_deal
-            )
-            if is_nanny and self.can_add_goat(player):
+            is_nanny = (card.effect_id == "nanny" and self.phase != "setup"
+                        and not player.has("quarantine"))
+            if is_nanny:
                 player.goats.append(card)
                 observation.played_turn = player.turns
                 observation.auto_play = True
@@ -87,9 +86,11 @@ class Game:
                 self.event("auto_play", player.seat, card)
             else:
                 player.hand.append(card)
-                if is_nanny:
+                if card.effect_id == "nanny" and self.phase == "setup":
+                    self.event("nanny_dealt_as_goat", player.seat, card)
+                elif card.effect_id == "nanny" and player.has("quarantine"):
                     self.event("nanny_quarantined", player.seat, card,
-                               explanation="Kept in hand; bonus draw still applies.")
+                               explanation="Kept in hand; the Nanny effect is blocked.")
             if not self.deck:
                 self.final_start_seat = player.seat
                 self.event("deck_exhausted", player.seat, card)
@@ -112,11 +113,6 @@ class Game:
     @staticmethod
     def find_card(cards: List[Card], uid: Optional[int]) -> Card:
         return next(card for card in cards if card.uid == uid)
-
-    def removal_goat(self, target: Player) -> Card:
-        # Ties have identical game effects, so physical deck order breaks ties.
-        chooser = min if self.rules.removal_choice == "victim" else max
-        return chooser(target.goats, key=lambda card: card.goat_count)
 
     def legal_moves(self, player: Player) -> List[Move]:
         moves = []
@@ -146,9 +142,9 @@ class Game:
                         if not target.goats:
                             continue
                         if effect == "steal":
-                            moves.extend(Move(card, target.seat, goat.uid) for goat in target.goats)
+                            moves.append(Move(card, target.seat))
                         else:
-                            moves.append(Move(card, target.seat, self.removal_goat(target).uid))
+                            moves.append(Move(card, target.seat))
         return moves
 
     @staticmethod
@@ -214,7 +210,8 @@ class Game:
         self.discard.append(card)
         effect = card.effect_id
         if effect in ("eject", "destroy", "steal"):
-            goat = self.find_card(target.goats, move.target_card_uid)
+            # The targeted player chooses which of their goats is affected.
+            goat = self.ai.choose_goat_to_remove(target.goats)
             target.goats.remove(goat)
             if effect == "eject":
                 self.orbital.append(goat)
@@ -262,12 +259,17 @@ class Game:
         self.draw(player)
         if self.final_start_seat is not None:
             return
-        move = self.ai.choose_move(self.context(player.seat), self.legal_moves(player))
-        if move is None:
-            self.draw(player, "extra_draw")
-            if self.final_start_seat is not None:
-                return
-        else:
+        action_slots = 2 if player.has("double_trouble") else 1
+        self.actions_left = action_slots
+        for action_index in range(action_slots):
+            self.actions_left = action_slots - action_index
+            move = self.ai.choose_move(self.context(player.seat), self.legal_moves(player))
+            if move is None:
+                if action_index == 0:
+                    self.draw(player, "extra_draw")
+                    if self.final_start_seat is not None:
+                        return
+                break
             self.play(player, move)
         self.enforce_hand_limit(player)
         player.normal_turns += 1

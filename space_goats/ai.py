@@ -71,7 +71,7 @@ class SharedAI:
         if effect == "scoop":
             return float(sum(goat.goat_count for goat in context.orbital))
         if effect in ("steal", "eject", "destroy"):
-            goat = next(goat for goat in target.goats if goat.uid == move.target_card_uid)
+            goat = min(target.goats, key=lambda candidate: candidate.goat_count)
             attack_value = goat.goat_count * self.relevance(context, target.seat) * 0.8
             return attack_value + (goat.goat_count if effect == "steal" else 0.0)
         if effect == "remove_modifier":
@@ -79,6 +79,8 @@ class SharedAI:
             horizon = self.future_turns(context, target.seat)
             if target.seat == context.seat:
                 if special.effect_id == "alfalfa":
+                    return -1.0
+                if special.effect_id == "double_trouble":
                     return -1.0
                 if context.final_orbit and special.effect_id == "wiring":
                     return -0.1
@@ -95,6 +97,10 @@ class SharedAI:
                 if context.final_orbit:
                     return -0.1
                 return min(3.2, horizon * 0.45) * self.relevance(context, target.seat)
+            if special.effect_id == "double_trouble":
+                if context.final_orbit:
+                    return -0.1
+                return min(3.5, horizon * 0.55) * self.relevance(context, target.seat)
             return -1.0
         if card.card_type == "Special":
             horizon = self.future_turns(context, target.seat)
@@ -104,6 +110,12 @@ class SharedAI:
                 if target.seat != context.seat or context.final_orbit:
                     return -1.0
                 return min(3.8, horizon * 0.5)
+            if effect == "double_trouble":
+                if target.seat != context.seat:
+                    return -1.0
+                if context.final_orbit:
+                    return -0.1
+                return min(4.0, horizon * 0.65)
             if context.final_orbit and effect == "wiring":
                 return -0.1
             if target.seat == context.seat:
@@ -167,3 +179,9 @@ class SharedAI:
                 return card.goat_count * (0.8 if context.me.has("quarantine") else 1.0)
             return max(0.05, scores.get(card.uid, 0.05))
         return min(context.hand, key=lambda card: keep_value(card) + self.rng.uniform(-0.05, 0.05))
+
+    def choose_goat_to_remove(self, goats: List[Card]) -> Card:
+        """Choose the lowest-value goat when a ship's owner is forced to lose one."""
+        lowest = min(goat.goat_count for goat in goats)
+        candidates = [goat for goat in goats if goat.goat_count == lowest]
+        return self.rng.choice(candidates)

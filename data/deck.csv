@@ -91,6 +91,8 @@ Special,Hydroponic Alfalfa,0,Upgrade - Attach to a Spaceship. This player draws 
 Special,Hydroponic Alfalfa,0,Upgrade - Attach to a Spaceship. This player draws an extra card at the start of their turn.,"Tastes like plastic, but it's green enough."
 Special,Hydroponic Alfalfa,0,Upgrade - Attach to a Spaceship. This player draws an extra card at the start of their turn.,"Tastes like plastic, but it's green enough."
 Special,Hydroponic Alfalfa,0,Upgrade - Attach to a Spaceship. This player draws an extra card at the start of their turn.,"Tastes like plastic, but it's green enough."
+Special,Double Trouble,0,Upgrade - Attach to a Spaceship. This player can now play two cards each action phase.,"Double the action, double the chaos."
+Special,Double Trouble,0,Upgrade - Attach to a Spaceship. This player can now play two cards each action phase.,"Double the action, double the chaos."
 Special,Chewed Wiring,0,Downgrade - Attach to a Spaceship. This player's hand limit is permanently reduced to 3.,Spicy hay!
 Special,Chewed Wiring,0,Downgrade - Attach to a Spaceship. This player's hand limit is permanently reduced to 3.,Spicy hay!
 Special,Chewed Wiring,0,Downgrade - Attach to a Spaceship. This player's hand limit is permanently reduced to 3.,Spicy hay!
@@ -98,8 +100,6 @@ Special,Chewed Wiring,0,Downgrade - Attach to a Spaceship. This player's hand li
 Special,Space Sickness,0,Downgrade - Attach to a Spaceship. This player cannot play Action cards against other players.,"In space, no one can hear you hurl."
 Special,Space Sickness,0,Downgrade - Attach to a Spaceship. This player cannot play Action cards against other players.,"In space, no one can hear you hurl."
 Special,Space Sickness,0,Downgrade - Attach to a Spaceship. This player cannot play Action cards against other players.,"In space, no one can hear you hurl."
-Special,Space Sickness,0,Downgrade - Attach to a Spaceship. This player cannot play Action cards against other players.,"In space, no one can hear you hurl."
-Special,Quarantine Zone,0,Downgrade - Attach to a Spaceship. This player cannot add any more Goat cards to their Spaceship.,"Nobody in, nobody out. Biological hazard."
 Special,Quarantine Zone,0,Downgrade - Attach to a Spaceship. This player cannot add any more Goat cards to their Spaceship.,"Nobody in, nobody out. Biological hazard."
 Special,Quarantine Zone,0,Downgrade - Attach to a Spaceship. This player cannot add any more Goat cards to their Spaceship.,"Nobody in, nobody out. Biological hazard."
 Special,Quarantine Zone,0,Downgrade - Attach to a Spaceship. This player cannot add any more Goat cards to their Spaceship.,"Nobody in, nobody out. Biological hazard."
